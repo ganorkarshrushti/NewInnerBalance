@@ -1,59 +1,54 @@
+/* Navbar.css */
 
-.navbar {
-    padding: 10px 20px;
-  }
-  
-  /* Logo */
-  .logo-img {
-    width: 50px; /* Adjust the width of your logo as needed */
-    margin-right: 10px; /* Add margin to separate the logo from the title */
-  }
-  
-  /* Navbar links */
-  .navbar-nav > .nav-item > .nav-link {
-    color: #fff; /* White text color */
-    font-weight: bold; /* Bold font weight */
-    font-size: 16px; /* Font size */
-  }
-  
-  /* Dropdown menu */
-  .dropdown-menu {
-    background-color: #343a40; /* Dark background color */
-  }
-  
-  /* Dropdown items */
-  .dropdown-item {
-    color: #fff; /* White text color */
-    font-size: 14px; /* Font size */
-  }
-  
-  /* Dropdown toggle */
-  .dropdown-toggle {
-    font-size: 16px; /* Font size */
-  }
-  
-  /* Dropdown divider */
-  .dropdown-divider {
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Divider color */
-  }
-  
-  /* Search form */
-  .form-control {
-    background-color: #0f0f10; /* Dark background color for search input */
-    border-color: #090a0a; /* Dark border color */
-    color: #fff; /* White text color */
-  }
-  
-  /* Search button */
-  .btn-outline-success {
-    color: #28a745; /* Green text color for search button */
-    border-color: #28a745; /* Green border color for search button */
-  }
-  
-  /* Search button hover/focus */
-  .btn-outline-success:hover,
-  .btn-outline-success:focus {
-    background-color: #218838; /* Darker green background color on hover/focus */
-    color: #fff; /* White text color on hover/focus */
-  }
-  
+/* Styles for Navbar */
+.bg-body-tertiary {
+    background-color: #f0f0f0; /* Set background color */
+}
+
+/* Styles for Logo */
+.logo-img {
+    width: 50px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin to the right of the logo */
+}
+
+/* Styles for Main Heading */
+.navbar-brand .display-4 {
+    font-size: 30px; /* Increase font size */
+    font-weight: bold; /* Make the heading bold */
+    color: #000; /* Set text color */
+}
+
+/* Styles for Register/Login Button */
+.btn-outline-success {
+    color: #000; /* Set text color */
+    border-color: #000; /* Set border color */
+}
+
+/* Styles for Navbar Links and Dropdown */
+.nav-link,
+.dropdown-item {
+    color: #000; /* Set text color */
+}
+
+/* Styles for Navbar Links and Dropdown on Hover */
+.nav-link:hover,
+.dropdown-item:hover {
+    color: #333; /* Set text color on hover */
+}
+
+/* Styles for Navbar Dropdown Menu */
+.dropdown-menu {
+    background-color: #f0f0f0; /* Set background color */
+    border-color: #ccc; /* Set border color */
+}
+
+/* Styles for Navbar Dropdown Menu Items */
+.dropdown-item {
+    color: #000; /* Set text color */
+}
+
+/* Styles for Navbar Dropdown Menu Items on Hover */
+.dropdown-item:hover {
+    background-color: #e3e3e3; /* Set background color on hover */
+}
