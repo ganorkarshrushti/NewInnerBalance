@@ -26,8 +26,6 @@ const Faq = () => {
           <p>Common mental health disorders include depression, anxiety disorders (such as generalized anxiety disorder, social anxiety disorder, and panic disorder), bipolar disorder, schizophrenia, post-traumatic stress disorder (PTSD), obsessive-compulsive disorder (OCD), and eating disorders.</p>
         </div>
       </div>
-
-      {/* Add more FAQs here */}
     </div>
   );
 };

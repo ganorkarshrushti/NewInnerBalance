@@ -1,8 +1,7 @@
-/* Navbar.css */
 
-/* Styles for Navbar */
 .bg-body-tertiary {
-    background-color: #f0f0f0; /* Set background color */
+    background-color: #f0f0f0; 
+    
 }
 
 /* Styles for Logo */
@@ -39,8 +38,7 @@
 
 /* Styles for Navbar Dropdown Menu */
 .dropdown-menu {
-    background-color: #f0f0f0; /* Set background color */
-    border-color: #ccc; /* Set border color */
+    background-color: #f0f0f0; 
 }
 
 /* Styles for Navbar Dropdown Menu Items */
@@ -50,5 +48,5 @@
 
 /* Styles for Navbar Dropdown Menu Items on Hover */
 .dropdown-item:hover {
-    background-color: #e3e3e3; /* Set background color on hover */
+    background-color: #e3e3e3; 
 }
