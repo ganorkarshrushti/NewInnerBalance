@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Home  from './components/Home';
 import Faq from './components/Faq';
 import Help from './components/Help';
+import Quiz from  './components/Quiz';
+
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 function App() {
    const router=createBrowserRouter([
@@ -20,6 +22,10 @@ function App() {
     {
       path: "/help",
       element: <Help/>
+    },
+    {
+      path: "/quiz",
+      element: <Quiz/>
     },
    ])
   

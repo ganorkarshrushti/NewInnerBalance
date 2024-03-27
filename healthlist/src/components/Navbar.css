@@ -1,7 +1,5 @@
-
 .bg-body-tertiary {
     background-color: #f0f0f0; 
-    
 }
 
 /* Styles for Logo */
@@ -28,6 +26,7 @@
 .nav-link,
 .dropdown-item {
     color: #000; /* Set text color */
+    text-decoration: none; /* Remove default link underline */
 }
 
 /* Styles for Navbar Links and Dropdown on Hover */
@@ -49,4 +48,9 @@
 /* Styles for Navbar Dropdown Menu Items on Hover */
 .dropdown-item:hover {
     background-color: #e3e3e3; 
+}
+
+/* Styles for Navbar Links */
+.navbar-nav .nav-link {
+    margin-right: 10px; /* Add margin between navbar links */
 }
