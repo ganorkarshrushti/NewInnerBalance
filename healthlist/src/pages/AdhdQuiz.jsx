@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import './AdhdQuiz.css'
 const ADHDQuiz = () => {
   const questions = [
     {
