@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import quiz1Image from '../images/Anxiety.jpeg';
 import quiz2Image from '../images/Depression.jpeg';
 import quiz3Image from '../images/Ocd.jpeg';
@@ -26,7 +25,7 @@ const Quiz = () => {
             <div className="card-content">
               <h2>Anxiety  Test</h2>
               <p>Our quiz can help you determine whether you have Anxiety.</p>
-              <button><Link to="/anxiety-quiz">Take Quiz</Link></button>
+              <button><Link to="/AnxietyQuiz">Take Quiz</Link></button>
             </div>
           </div>
 
@@ -39,7 +38,7 @@ const Quiz = () => {
               <p>
                  Our quiz can help you detect early signs of Depression
               </p>
-              <button><Link to="/depression-quiz">Take Quiz</Link></button>
+              <button><Link to="/DepressionQuiz">Take Quiz</Link></button>
             </div>
           </div>
   
@@ -66,7 +65,7 @@ const Quiz = () => {
                 Our quiz can help you determine whether you
                 have ADHD
               </p>
-              <button><Link to="/adhd-quiz">Take Quiz</Link></button>
+              <button><Link to="/AdhdQuiz">Take Quiz</Link></button>
             </div>
           </div>
           <div className="card">
