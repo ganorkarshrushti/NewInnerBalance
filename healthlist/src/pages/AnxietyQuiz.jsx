@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import './AnxietyQuiz.css';
 const AnxietyQuiz = () => {
   const [questions, setQuestions] = useState([
     {

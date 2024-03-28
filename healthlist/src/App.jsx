@@ -9,7 +9,7 @@ import Quiz from  './components/Quiz';
 import AnxietyQuiz from  './pages/AnxietyQuiz';
 import DepressionQuiz from './pages/DepressionQuiz';
 import AdhdQuiz from './pages/AdhdQuiz';
-import OcdQuiz from './pages/OcddQuiz';
+import OcdQuiz from './pages/OcdQuiz';
 
 
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
