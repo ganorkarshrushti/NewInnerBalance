@@ -4,6 +4,7 @@ import quiz1Image from '../images/Anxiety.jpeg';
 import quiz2Image from '../images/Depression.jpeg';
 import quiz3Image from '../images/Ocd.jpeg';
 import quiz4Image from '../images/Adhd.jpeg';
+import './Quiz.css';
 
 const Quiz = () => {
   return (
@@ -75,7 +76,7 @@ const Quiz = () => {
             <div className="card-content">
               <h2>PTSD Test</h2>
               <p>Our quiz can help you determine whether you have PTSD.</p>
-              <button><Link to="/anxiety-quiz">Take Quiz</Link></button>
+              <button><Link to="/Ptsdquiz">Take Quiz</Link></button>
             </div>
           </div>
           <div className="card">
@@ -83,9 +84,9 @@ const Quiz = () => {
               <img src={quiz3Image} alt="Quiz 1" />
             </div>
             <div className="card-content">
-              <h2>Social Anxiety  Test</h2>
+              <h2>Social Anxiety Test</h2>
               <p>Take this Quiz to know more.</p>
-              <button><Link to="/anxiety-quiz">Take Quiz</Link></button>
+              <button><Link to="/SocialQuiz">Take Quiz</Link></button>
             </div>
           </div>
           {/* End of the second section */}

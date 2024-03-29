@@ -1,0 +1,49 @@
+.articles {
+    display: flex; /* Arrange articles horizontally */
+    flex-wrap: wrap; /* Allow wrapping to next line if needed */
+    justify-content: space-between; /* Space between each article */
+  }
+  
+  .article-item {
+    width: calc(33.33% - 20px); /* Adjust width of each article */
+    background-color: #fff; /* Article background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    margin-bottom: 20px; /* Add space below each article */
+  }
+  
+  .article-item img {
+    width: 100%; /* Full width image */
+    height: 200px; /* Reduced height for image */
+    object-fit: cover; /* Cover the entire space */
+    border-top-left-radius: 10px; /* Rounded corners for top-left */
+    border-top-right-radius: 10px; /* Rounded corners for top-right */
+  }
+  
+  .article-item h2 {
+    font-size: 20px; /* Heading size */
+    margin: 10px 0; /* Add space around heading */
+  }
+  
+  .article-item p {
+    font-size: 16px; /* Text size */
+    color: #666; /* Text color */
+    margin-bottom: 15px; /* Add space below paragraph */
+  }
+  
+  .article-item .read-more {
+    display: block; /* Display as block element */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding inside button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Add space above button */
+  }
+  
+  .article-item .read-more:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  

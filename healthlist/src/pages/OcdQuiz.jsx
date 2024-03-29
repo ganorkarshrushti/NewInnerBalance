@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './OcdQuiz.css';
 function OcdQuiz() {
 
   const questions = [

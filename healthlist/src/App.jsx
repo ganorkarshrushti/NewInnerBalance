@@ -10,10 +10,13 @@ import AnxietyQuiz from  './pages/AnxietyQuiz';
 import DepressionQuiz from './pages/DepressionQuiz';
 import AdhdQuiz from './pages/AdhdQuiz';
 import OcdQuiz from './pages/OcdQuiz';
+import SocialQuiz from './pages/SocialQuiz';
+import PtsdQuiz from './pages/PtsdQuiz';
+import Articles from './components/Articles';
+import AnxietyArt from './pages/AnxietyArt';
 
 
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
-
 
 function App() {
    const router=createBrowserRouter([
@@ -52,6 +55,24 @@ function App() {
     {
       path: "/ocdquiz",
       element: <OcdQuiz/>
+    },
+
+    {
+      path: "/socialquiz",
+      element: <SocialQuiz/>
+    },
+    
+    {
+      path: "/ptsdquiz",
+      element: <PtsdQuiz/>
+    },
+    {
+      path: "/articles",
+      element: <Articles/>
+    },
+    {
+      path: "/anxietyart",
+      element: <AnxietyArt/>
     },
 
    ])

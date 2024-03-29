@@ -20,7 +20,7 @@ const CustomNavbar = () => {
             <a href="/help">Help Now</a>
           
             <NavDropdown title="Explore" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Articles</NavDropdown.Item>
+              <NavDropdown.Item href="/articles">Articles</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Exercise & Meditation</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Journal</NavDropdown.Item>
               <NavDropdown.Divider />
