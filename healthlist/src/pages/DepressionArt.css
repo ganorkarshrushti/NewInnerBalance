@@ -1,102 +1,90 @@
-/* Container for the entire page */
+/* DepressionArt.css */
+
 .mental-illness-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-  }
-  
-  /* Headings */
-  h1, h2 {
-    color: #4b0082; /* Purple */
+    max-width: 800px; /* Set maximum width for better readability */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Add padding around the content */
+}
+
+.mental-illness-page h2 {
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Image container */
-  .image-container {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  /* Image navigation buttons */
-  .arrow-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(75, 0, 130, 0.8); /* Indigo */
-    color: #fff;
-    border: none;
-    padding: 10px;
     font-size: 2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 50%;
-  }
-  
-  .arrow-button:hover {
-    background-color: rgba(75, 0, 130, 1); /* Darker Indigo */
-  }
-  
-  .prev-button {
-    left: 0;
-  }
-  
-  .next-button {
-    right: 0;
-  }
-  
-  /* Image */
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-  }
-  
-  /* List items */
-  ul {
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 10px;
-    color: #555;
-  }
-  
-  /* Bullets */
-  li:before {
-    content: '•';
-    color: #4b0082; /* Purple */
-    font-size: 2rem;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-  }
-  
-  /* Headings of each point */
-  li h3 {
-    font-size: 2rem;
-    color: #666;
-  }
-  
-  /* Paragraph */
-  p {
-    line-height: 1.6;
-  }
-  
-  /* Hyperlink */
-  a {
-    color: #007bff; /* Blue */
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: #0056b3; /* Darker Blue */
-    text-decoration: underline;
-  }
-  
+}
+
+.image-container {
+    position: relative; /* Positioning for next/previous buttons */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure image fits container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border radius to image */
+}
+
+.arrow-button {
+    position: absolute; /* Position buttons */
+    top: 50%; /* Align buttons vertically */
+    transform: translateY(-50%); /* Adjust vertical position */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border: none; /* Remove border */
+    color: #333; /* Button text color */
+    font-size: 24px; /* Button font size */
+    padding: 10px; /* Add padding */
+    cursor: pointer; /* Add cursor pointer */
+    z-index: 1; /* Ensure buttons are above image */
+}
+
+.prev-button {
+    left: 10px; 
+}
+
+.next-button {
+    right: 10px; 
+}
+
+h2 {
+    color: #650277; 
+    margin-top: 20px; /* Add space above headings */
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+    animation: glow 1.5s ease-in-out infinite alternate; /* Apply glow animation */
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px #580292, 0 0 10px #580292, 0 0 20px #580292; /* Initial glow effect */
+    }
+    to {
+        box-shadow: 0 0 10px #a667c5, 0 0 20px #b266d0, 0 0 30px #603975; /* Final glow effect */
+    }
+}
+
+h2:hover {
+    color: #8f4d9d; /* New color on hover */
+    animation: none; /* Remove animation on hover */
+}
+
+
+/* Styling for paragraphs */
+p {
+    color: #666; /* Paragraph text color */
+    line-height: 1.6; /* Set line height for better readability */
+    margin-bottom: 20px; /* Add space below paragraphs */
+}
+
+ol {
+    margin-bottom: 20px; /* Add space below ordered lists */
+}
+
+li {
+    margin-bottom: 10px; 
+}
+
+a {
+    color: #007bff;
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
