@@ -1,4 +1,3 @@
-/* AnxietyArt.css */
 
 .mental-illness-page {
     max-width: 800px; /* Set maximum width for better readability */
@@ -36,16 +35,16 @@
   }
   
   .prev-button {
-    left: 10px; /* Position previous button to the left */
+    left: 10px; 
   }
   
   .next-button {
-    right: 10px; /* Position next button to the right */
+    right: 10px; 
   }
   
-  /* Styling for headings */
+  
   h2 {
-    color: #333; /* Heading text color */
+    color: #333; 
     margin-top: 20px; /* Add space above headings */
   }
   
@@ -56,24 +55,23 @@
     margin-bottom: 20px; /* Add space below paragraphs */
   }
   
-  /* Styling for ordered lists */
   ol {
     margin-bottom: 20px; /* Add space below ordered lists */
   }
   
-  /* Styling for list items */
+
   li {
-    margin-bottom: 10px; /* Add space below list items */
+    margin-bottom: 10px; 
   }
   
-  /* Styling for links */
+
   a {
-    color: #007bff; /* Link text color */
-    text-decoration: none; /* Remove underline */
+    color: #007bff;
+    text-decoration: none; 
   }
   
-  /* Styling for links on hover */
+  
   a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; 
   }
   
