@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Home.css';
+// import './Home.css';
+import styles from './Home.module.css';
 
 const Home = () => {
     // State for mood selection
@@ -11,8 +12,8 @@ const Home = () => {
     };
 
     return (
-        <div className="home-container">
-            <div className="jumbotron jumbotron-fluid">
+        <div className={styles['home-container']}>
+        <div className={styles.jumbotron}>
                 <div className="container">
                     <h1 className="display-4">InnerBalance - The Mental Health Checker</h1>
                     <p className="lead">

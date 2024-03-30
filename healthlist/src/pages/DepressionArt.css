@@ -44,26 +44,9 @@
 }
 
 h2 {
-    color: #650277; 
+    color: #333; 
     margin-top: 20px; /* Add space above headings */
-    transition: color 0.3s ease; /* Add transition for smooth color change */
-    animation: glow 1.5s ease-in-out infinite alternate; /* Apply glow animation */
 }
-
-@keyframes glow {
-    from {
-        box-shadow: 0 0 5px #580292, 0 0 10px #580292, 0 0 20px #580292; /* Initial glow effect */
-    }
-    to {
-        box-shadow: 0 0 10px #a667c5, 0 0 20px #b266d0, 0 0 30px #603975; /* Final glow effect */
-    }
-}
-
-h2:hover {
-    color: #8f4d9d; /* New color on hover */
-    animation: none; /* Remove animation on hover */
-}
-
 
 /* Styling for paragraphs */
 p {

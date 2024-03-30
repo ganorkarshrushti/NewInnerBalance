@@ -1,0 +1,50 @@
+/* Styles for Home Container */
+.home-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack sections vertically */
+  align-items: center; /* Center align items horizontally */
+  padding: 20px; /* Add padding */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Styles for Quick-Quiz Section */
+.assessment-section {
+  padding: 20px; /* Add padding */
+  margin-top: 20px; /* Add margin */
+  text-align: center; /* Center align text */
+}
+
+/* Styles for Assessment Button */
+.assessment-button {
+  margin-top: 20px; /* Add margin */
+}
+
+/* Styles for Mood Tracker Section */
+.mood-tracker-section {
+  padding: 20px; /* Add padding */
+  margin-top: 20px; /* Add margin */
+  text-align: center; /* Center align text */
+}
+
+/* Styles for Mood Options */
+.mood-options {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align buttons horizontally */
+  margin-top: 20px; /* Add margin */
+}
+
+/* Styles for Mood Option Buttons */
+.mood-option {
+  font-size: 24px; /* Set font size */
+  margin: 0 10px; /* Add margin between buttons */
+  cursor: pointer; /* Set cursor to pointer */
+  border: none; /* Remove default button border */
+  background-color: transparent; /* Set background color to transparent */
+}
+
+/* Styles for Selected Mood Option */
+.selected {
+  border: 2px solid #044a95; /* Add border to indicate selection */
+}
