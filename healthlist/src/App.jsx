@@ -14,6 +14,7 @@ import SocialQuiz from './pages/SocialQuiz';
 import PtsdQuiz from './pages/PtsdQuiz';
 import Articles from './components/Articles';
 import AnxietyArt from './pages/AnxietyArt';
+import DepressionArt from './pages/DepressionArt';
 
 
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
@@ -73,6 +74,10 @@ function App() {
     {
       path: "/anxietyart",
       element: <AnxietyArt/>
+    },
+    {
+      path: "/depressionart",
+      element: <DepressionArt/>
     },
 
    ])

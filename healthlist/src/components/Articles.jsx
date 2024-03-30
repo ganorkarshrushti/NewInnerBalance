@@ -15,7 +15,7 @@ const mentalIllnesses = [
     title: 'Depression',
     description: 'A common and serious medical illness that negatively affects how you feel, the way you think and how you act.',
     image: 'https://www.sciencenews.org/wp-content/uploads/2023/02/021123_LS_depression_feat.jpg',
-    link: '/depression',
+    link: '/depressionart',
   },
   {
     id: 3,

@@ -1,0 +1,102 @@
+/* Container for the entire page */
+.mental-illness-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    color: #4b0082; /* Purple */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image container */
+  .image-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* Image navigation buttons */
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(75, 0, 130, 0.8); /* Indigo */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+  }
+  
+  .arrow-button:hover {
+    background-color: rgba(75, 0, 130, 1); /* Darker Indigo */
+  }
+  
+  .prev-button {
+    left: 0;
+  }
+  
+  .next-button {
+    right: 0;
+  }
+  
+  /* Image */
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  /* List items */
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Bullets */
+  li:before {
+    content: '•';
+    color: #4b0082; /* Purple */
+    font-size: 2rem;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  /* Headings of each point */
+  li h3 {
+    font-size: 2rem;
+    color: #666;
+  }
+  
+  /* Paragraph */
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Hyperlink */
+  a {
+    color: #007bff; /* Blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0056b3; /* Darker Blue */
+    text-decoration: underline;
+  }
+  
