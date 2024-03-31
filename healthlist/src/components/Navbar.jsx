@@ -10,14 +10,14 @@ const CustomNavbar = () => {
       <Container>
         <Navbar.Brand href="#home">
           <img src={logo} alt="Logo" className="logo-img" />
-          InnerBalance
+           <span className="inner-balance" style={{ fontWeight: 'bold', fontSize: '20px' }}>InnerBalance</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <a href="/">Home</a>
-            <a href="/">Book an Appointment</a>
-            <a href="/help">Help Now</a>
+            <a href="/"> Home </a>
+            <a href="/"> Book an Appointment </a>
+            <a href="/help"> Help Now </a>
           
             <NavDropdown title="Explore" id="basic-nav-dropdown">
               <NavDropdown.Item href="/articles">Articles</NavDropdown.Item>

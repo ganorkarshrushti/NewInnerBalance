@@ -4,8 +4,8 @@
   flex-direction: column; /* Stack sections vertically */
   align-items: center; /* Center align items horizontally */
   padding: 20px; /* Add padding */
-  border: 1px solid #ccc; /* Add border */
-  border-radius: 10px; /* Add border radius */
+  border: 10px solid #ccc; /* Add border */
+  border-radius: 20px; /* Add border radius */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 

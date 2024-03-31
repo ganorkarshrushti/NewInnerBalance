@@ -6,15 +6,19 @@
 .logo-img {
     width: 50px; /* Adjust the width of the logo */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add margin to the right of the logo */
+    margin-left: 80px; /* Add margin to the right of the logo */
 }
 
-/* Styles for Main Heading */
+.navbar-brand .inner-balance {
+    margin-right: 350px; /* Adjust the value as needed */
+  }
+  
+/* Styles for Main Heading
 .navbar-brand .display-4 {
-    font-size: 30px; /* Increase font size */
-    font-weight: bold; /* Make the heading bold */
+   
     color: #000; /* Set text color */
-}
+    /* margin-right: 100px; 
+} */ 
 
 /* Styles for Register/Login Button */
 .btn-outline-success {
@@ -23,14 +27,16 @@
 }
 
 /* Styles for Navbar Links and Dropdown */
-.nav-link,
+
 .dropdown-item {
     color: #000; /* Set text color */
     text-decoration: none; /* Remove default link underline */
+    margin-right: 10px;
+
 }
 
 /* Styles for Navbar Links and Dropdown on Hover */
-.nav-link:hover,
+
 .dropdown-item:hover {
     color: #333; /* Set text color on hover */
 }
@@ -50,7 +56,24 @@
     background-color: #e3e3e3; 
 }
 
-/* Styles for Navbar Links */
+ /* Styles for Navbar Links */
 .navbar-nav .nav-link {
-    margin-right: 10px; /* Add margin between navbar links */
+    margin-right: 35px; 
+}
+    
+
+.nav-link {
+    color: #000 !important; /* Set text color */
+    text-decoration: none; /* Remove default link underline */
+    margin-right: 15px; /* Add margin between navbar links */
+}
+
+.nav-link:hover {
+    color: #333 !important; /* Set text color on hover */
+}
+
+
+.me-auto {
+    margin-left: 0; /* Reset margin */
+    margin-right: auto; /* Shift navbar links to the left */
 }

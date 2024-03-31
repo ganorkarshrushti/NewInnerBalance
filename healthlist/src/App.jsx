@@ -17,6 +17,7 @@ import AnxietyArt from './pages/AnxietyArt';
 import DepressionArt from './pages/DepressionArt';
 
 
+
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 function App() {
@@ -79,6 +80,8 @@ function App() {
       path: "/depressionart",
       element: <DepressionArt/>
     },
+
+    
 
    ])
   
