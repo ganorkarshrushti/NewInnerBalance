@@ -1,0 +1,75 @@
+
+.mental-illness-page {
+    max-width: 800px; /* Set maximum width for better readability */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Add padding around the content */
+  }
+
+  .mental-illness-page h2 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .image-container {
+    position: relative; /* Positioning for next/previous buttons */
+    margin-bottom: 20px; /* Add space below the image */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Ensure image fits container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border radius to image */
+  }
+  
+  .arrow-button {
+    position: absolute; /* Position buttons */
+    top: 50%; /* Align buttons vertically */
+    transform: translateY(-50%); /* Adjust vertical position */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border: none; /* Remove border */
+    color: #333; /* Button text color */
+    font-size: 24px; /* Button font size */
+    padding: 10px; /* Add padding */
+    cursor: pointer; /* Add cursor pointer */
+    z-index: 1; /* Ensure buttons are above image */
+  }
+  
+  .prev-button {
+    left: 10px; 
+  }
+  
+  .next-button {
+    right: 10px; 
+  }
+  
+  h2 {
+    color: #333; 
+    margin-top: 20px; /* Add space above headings */
+  }
+  
+  /* Styling for paragraphs */
+  p {
+    color: #666; /* Paragraph text color */
+    line-height: 1.6; /* Set line height for better readability */
+    margin-bottom: 20px; /* Add space below paragraphs */
+  }
+  
+  ol {
+    margin-bottom: 20px; /* Add space below ordered lists */
+  }
+  
+
+  li {
+    margin-bottom: 10px; 
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none; 
+  }
+  
+  
+  a:hover {
+    text-decoration: underline; 
+  }
+  

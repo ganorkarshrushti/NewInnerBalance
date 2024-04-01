@@ -22,7 +22,7 @@ const mentalIllnesses = [
     title: 'Obsessive-Compulsive Disorder(OCD)',
     description: 'A common, chronic, and long-lasting disorder in which a person has uncontrollable, reoccurring thoughts and/or behaviors that he or she feels the urge to repeat over and over.',
     image: 'https://superblog.supercdn.cloud/site_cuid_cl92i00jg261301kozfglx818f/images/obsessive-compulsive-disorder-ocd-1685709447808-compressed.jpg',
-    link: '/ocd',
+    link: '/ocdart',
   },
   {
     id: 4,

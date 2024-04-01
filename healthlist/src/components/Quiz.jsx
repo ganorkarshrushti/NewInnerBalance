@@ -50,7 +50,7 @@ const Quiz = () => {
             <div className="card-content">
               <h2>OCD Test</h2>
               <p>Our quiz can help you determine whether you have OCD</p>
-              <button><Link to="/ocd-quiz">Take Quiz</Link></button>
+              <button><Link to="/ocdquiz">Take Quiz</Link></button>
             </div>
           </div>
           </div>
@@ -76,7 +76,7 @@ const Quiz = () => {
             <div className="card-content">
               <h2>PTSD Test</h2>
               <p>Our quiz can help you determine whether you have PTSD.</p>
-              <button><Link to="/Ptsdquiz">Take Quiz</Link></button>
+              <button><Link to="/ptsdquiz">Take Quiz</Link></button>
             </div>
           </div>
           <div className="card">

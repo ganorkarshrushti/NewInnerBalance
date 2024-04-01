@@ -15,6 +15,7 @@ import PtsdQuiz from './pages/PtsdQuiz';
 import Articles from './components/Articles';
 import AnxietyArt from './pages/AnxietyArt';
 import DepressionArt from './pages/DepressionArt';
+import OcdArt from './pages/OcdArt';
 
 
 
@@ -81,7 +82,11 @@ function App() {
       element: <DepressionArt/>
     },
 
-    
+    {
+      path: "/ocdart",
+      element: <OcdArt/>
+    },
+
 
    ])
   
