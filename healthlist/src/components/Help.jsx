@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-
+import './Help.css';
 
 const Home = () => {
   return (

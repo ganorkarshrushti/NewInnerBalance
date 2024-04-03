@@ -21,9 +21,9 @@ const CustomNavbar = () => {
           
             <NavDropdown title="Explore" id="basic-nav-dropdown">
               <NavDropdown.Item href="/articles">Articles</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Exercise & Meditation</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Journal</NavDropdown.Item>
-              <NavDropdown.Divider />
+              <NavDropdown.Item href="/meditationresources">Exercise & Meditation</NavDropdown.Item>
+              <NavDropdown.Item href="/journal">Journal</NavDropdown.Item>
+              <NavDropdown.Divider /> 
               <NavDropdown.Item href="/quiz">Quizzes</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.5">Affirmations</NavDropdown.Item>
             </NavDropdown>

@@ -1,0 +1,32 @@
+.meditation-resources {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .resource-slider {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+  }
+  
+  .resource-slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
+  }
+  
+  .resource-card {
+    margin: 10px;
+  }
+  
+  .resource-card img {
+    width: 200px; /* Adjust width as needed */
+    height: auto;
+  }
+  
+  .resource-card h4 {
+    margin-top: 10px;
+  }
+  
+  /* Optional: Add more styling as needed */
+  

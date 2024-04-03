@@ -16,10 +16,11 @@ import Articles from './components/Articles';
 import AnxietyArt from './pages/AnxietyArt';
 import DepressionArt from './pages/DepressionArt';
 import OcdArt from './pages/OcdArt';
-
-
-
+import Journal from  './components/Journal';
+import Exercisemed from  './components/Exercisemed';
+import MeditationResources from './components/MeditationResources';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
+
 
 function App() {
    const router=createBrowserRouter([
@@ -86,6 +87,19 @@ function App() {
       path: "/ocdart",
       element: <OcdArt/>
     },
+    {
+      path: "/journal",
+      element: <Journal/>
+    },
+    {
+      path: "/exercisemed",
+      element: <Exercisemed/>
+    },
+    {
+      path: "/meditationResources",
+      element: <MeditationResources/>
+    },
+     
 
 
    ])
