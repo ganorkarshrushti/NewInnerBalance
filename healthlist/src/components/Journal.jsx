@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 const Journal = () => {
   const [entry, setEntry] = useState('');
 
@@ -15,19 +14,21 @@ const Journal = () => {
   };
 
   return (
-    <div>
-      <h2>Journal</h2>
-      <textarea
-        rows="5"
-        cols="50"
-        value={entry}
-        onChange={handleInputChange}
-        placeholder="Write about your day..."
-      />
-      <br />
-      <button onClick={saveEntry}>Save Entry</button>
+    <div className="container py-5">
+      <div className="card shadow p-3">
+        <h2 className="text-center mb-4">Journal</h2>
+        <textarea
+          className="form-control mb-3"
+          rows="5"
+          value={entry}
+          onChange={handleInputChange}
+          placeholder="Write about your day..."
+        />
+        <div className="d-flex justify-content-center">
+          <button className="btn btn-primary" onClick={saveEntry}>Save Entry</button>
+        </div>
+      </div>
     </div>
   );
 };
-
 export default Journal;

@@ -14,10 +14,10 @@ const CustomNavbar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <a href="/"> Home </a>
-            <a href="/"> Book an Appointment </a>
-            <a href="/help"> Help Now </a>
+          <Nav className="mx-auto">
+            <a href="/" className='text-black my-auto px-2'> Home </a>
+            <a href="/" className='text-black my-auto py-2'> Book an Appointment </a>
+            <a href="/help" className='text-black my-auto px-2'> Help Now </a>
           
             <NavDropdown title="Explore" id="basic-nav-dropdown">
               <NavDropdown.Item href="/articles">Articles</NavDropdown.Item>
@@ -27,7 +27,6 @@ const CustomNavbar = () => {
               <NavDropdown.Item href="/quiz">Quizzes</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.5">Affirmations</NavDropdown.Item>
             </NavDropdown>
-           
           </Nav>
           <div className="ms-auto">
             <form className="d-flex" role="Register/Login">
