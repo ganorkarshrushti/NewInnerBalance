@@ -61,6 +61,7 @@
     color: #000 !important; /* Set text color */
     text-decoration: none; /* Remove default link underline */
     margin-right: 15px; /* Add margin between navbar links */
+  
 }
 
 .nav-link:hover {

@@ -104,7 +104,7 @@ const CustomNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
             <Nav.Link href="/" className="text-black mx-2">Home</Nav.Link>
-            <Nav.Link href="/" className="text-black mx-2">Book an Appointment</Nav.Link>
+            <Nav.Link href="/" className="text-black mx-2"> Appointment Booking </Nav.Link>
             <Nav.Link href="/help" className="text-black mx-2">Help Now</Nav.Link>
           
             <NavDropdown title="Explore" id="basic-nav-dropdown" className="text-black mx-2">

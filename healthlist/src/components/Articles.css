@@ -2,6 +2,7 @@
     display: flex; /* Arrange articles horizontally */
     flex-wrap: wrap; /* Allow wrapping to next line if needed */
     justify-content: space-between; /* Space between each article */
+   padding: 3%;
   }
   
   .article-item {
