@@ -19,6 +19,7 @@ import OcdArt from './pages/OcdArt';
 import Journal from  './components/Journal';
 import Exercisemed from  './components/Exercisemed';
 import MeditationResources from './components/MeditationResources';
+import Contact from './components/Contact';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 
@@ -98,6 +99,10 @@ function App() {
     {
       path: "/meditationResources",
       element: <MeditationResources/>
+    },
+    {
+      path: "/contact",
+      element: <Contact/>
     },
      
 

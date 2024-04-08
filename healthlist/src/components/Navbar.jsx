@@ -98,7 +98,7 @@ const CustomNavbar = () => {
       <Container>
         <Navbar.Brand href="#home">
           <img src={logo} alt="Logo" className="logo-img" />
-          <span className="inner-balance" style={{ fontWeight: 'bold', fontSize: '20px', color: '#' }}>InnerBalance</span>
+          <span className="inner-balance" style={{ fontWeight: 'bold', fontSize: '20px', color: '#000000' }}>InnerBalance</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -106,6 +106,7 @@ const CustomNavbar = () => {
             <Nav.Link href="/" className="text-black mx-2">Home</Nav.Link>
             <Nav.Link href="/" className="text-black mx-2"> Appointment Booking </Nav.Link>
             <Nav.Link href="/help" className="text-black mx-2">Help Now</Nav.Link>
+            <Nav.Link href="/contact" className="text-black mx-2">Contact</Nav.Link>
           
             <NavDropdown title="Explore" id="basic-nav-dropdown" className="text-black mx-2">
               <NavDropdown.Item href="/articles">Articles</NavDropdown.Item>

@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import quiz1Image from '../images/Anxiety.jpeg';
-import quiz2Image from '../images/Depression.jpeg';
-import quiz3Image from '../images/Ocd.jpeg';
-import quiz4Image from '../images/Adhd.jpeg';
+import quiz1Image from '../images/anxiety.jpg';
+import quiz2Image from '../images/Dep.jpg';
+import quiz3Image from '../images/Ocd.jpg';
+import quiz4Image from '../images/adhd.jpg';
+import quiz5Image from '../images/ptsd.jpg';
+import quiz6Image from '../images/depression.jpg';
 import './Quiz.css';
 
 const Quiz = () => {
@@ -71,7 +73,7 @@ const Quiz = () => {
           </div>
           <div className="card">
             <div className="card-image">
-              <img src={quiz1Image} alt="Quiz 1" />
+              <img src={quiz5Image} alt="Quiz 5" />
             </div>
             <div className="card-content">
               <h2>PTSD Test</h2>
@@ -81,7 +83,7 @@ const Quiz = () => {
           </div>
           <div className="card">
             <div className="card-image">
-              <img src={quiz3Image} alt="Quiz 1" />
+              <img src={quiz6Image} alt="Quiz 6" />
             </div>
             <div className="card-content">
               <h2>Social Anxiety Test</h2>

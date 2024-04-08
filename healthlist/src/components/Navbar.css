@@ -1,5 +1,7 @@
 .bg-body-tertiary {
     background-color: #f0f0f0; 
+    
+ 
 }
 
 /* Styles for Logo */
@@ -11,6 +13,7 @@
 
 .navbar-brand .inner-balance {
     margin-right: 350px; /* Adjust the value as needed */
+    
   }
   
 

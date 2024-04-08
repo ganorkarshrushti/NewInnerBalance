@@ -211,7 +211,7 @@ import React, { useState } from 'react';
 import styles from './Home.module.css';
 
 // Import your background image
-import bghome from '../images/bghome.jpg';
+import bghome from '../images/blue bg.jpg';
 
 const Home = () => {
     // State for mood selection
@@ -225,7 +225,7 @@ const Home = () => {
     return (
         <div className={styles['home-container']} style={{ backgroundImage: `url(${bghome})`, minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="container text-center">
-                <h1 className="display-4 mb-4 text-primary">InnerBalance - The Mental Health Checker</h1>
+                <h1 className="display-4 mb-4 text-dark">InnerBalance - The Mental Health Checker</h1>
                 <p className="lead">
                     Embark on a transformative journey with InnerBalance - your trusted companion in mental well-being. Explore a sanctuary of self-care, where each step brings you closer to harmony and fulfillment.
                 </p>
