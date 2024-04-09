@@ -20,7 +20,10 @@ import Journal from  './components/Journal';
 import Exercisemed from  './components/Exercisemed';
 import MeditationResources from './components/MeditationResources';
 import Contact from './components/Contact';
+import LoginPage from './components/LoginPage';
+import SignUp from './components/SignUp';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
+
 
 function App() {
    const router=createBrowserRouter([
@@ -34,9 +37,18 @@ function App() {
       element: <Faq/>
     },
     {
+      path: "/loginpage",
+      element: <LoginPage/>
+    },
+    {
+      path: "/signup",
+      element: <SignUp/>
+    },
+    {
       path: "/help",
       element: <Help/>
     },
+    
     {
       path: "/quiz",
       element: <Quiz/>

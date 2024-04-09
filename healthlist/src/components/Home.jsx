@@ -404,6 +404,7 @@ const Home = () => {
                 <p className="lead">
                     Embark on a transformative journey with InnerBalance - your trusted companion in mental well-being. Explore a sanctuary of self-care, where each step brings you closer to harmony and fulfillment.
                 </p>
+                <a href="/" className={styles['get-started-btn']}>Get Started</a>
             </div>
          
             <div className={styles['content-block-container']} style={{ paddingTop: '60px' }}>

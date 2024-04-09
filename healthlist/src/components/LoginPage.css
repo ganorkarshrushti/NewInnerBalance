@@ -1,0 +1,200 @@
+/* LoginPage.css */
+
+.auth-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-image: url('https://media.istockphoto.com/id/1270241030/vector/colorful-watercolor-rhombus-background-frame.jpg?s=612x612&w=0&k=20&c=qpdG0PbfTbt-Vf_gzDkc4VZ4WF1tYCIq2TqjJrv7heU=');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+body {
+    background-image: url('https://media.istockphoto.com/id/1288568831/vector/colorful-and-mixed-color-gradient-watercolor-background-illustration.jpg?s=612x612&w=0&k=20&c=_bcTUUobh60lwbE4d01v_UdEsAodylC7Uo7mvZFhdwc=');
+    background-size: cover;
+    background-position: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+    color: #333; /* Text color */
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-container input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff69b4; /* Pink button color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+    background-color: #ff1493; /* Lighter pink on hover */
+}
+
+.auth-container p {
+    margin-top: 15px;
+    color: #666; /* Text color */
+}
+
+.auth-container a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+/*
+.auth-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.auth-container button {
+    padding: 10px;
+    background-color: #fa4fca;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+    background-color: #0056b3;
+}
+
+.auth-container p {
+    margin-top: 15px;
+}
+
+.auth-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+*/
+
+/*body {
+    background-image: url('https://media.istockphoto.com/id/1223835638/photo/light-sand-color-watercolor-stain.jpg?s=612x612&w=0&k=20&c=Ucl2NjpefDczQb1n1awiCM2eQZDK4HeU3otZDOUHiSM='); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container {
+    width: 400px;
+    margin: 150px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url('https://media.istockphoto.com/id/1356438855/vector/watercolor-yellow-stain-texture-can-be-used-as-brush-vector.jpg?s=612x612&w=0&k=20&c=zrFrpmv33c8NRJDtrgrqZF-CPnyFyIHQtOskMxYjFVs=');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.auth-container:hover {
+    transform: translateY(-5px);
+}
+
+.auth-container h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container input {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.auth-container input:focus {
+    border-color: #007bff;
+}
+
+.auth-container button {
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.auth-container button:hover {
+    background-color: #0056b3;
+}
+
+.auth-container p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+.auth-container a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.auth-container a:hover {
+    color: #0056b3;
+}
+*/

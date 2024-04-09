@@ -120,7 +120,7 @@ const CustomNavbar = () => {
             </NavDropdown>
           </Nav>
           <Nav className="ms-auto">
-            <a href="#" className="btn btn-outline-success mx-2">Register/Login</a>
+            <a href="loginpage" className="btn btn-outline-success mx-2">Register/Login</a>
           </Nav>
         </Navbar.Collapse>
       </Container>
