@@ -87,11 +87,12 @@ const CustomNavbar = () => {
 export default CustomNavbar;
 */
 
+
 import React from 'react';
 import './Navbar.css';
 import logo from '../images/logo5.jpg'; 
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-
+import bghome from '../images/perfectbg.jpg';
 const CustomNavbar = () => { 
   return (
     <Navbar expand="lg" className="navbar-dark bg-body-tertiary">
@@ -114,6 +115,7 @@ const CustomNavbar = () => {
               <NavDropdown.Item href="/journal">Journal</NavDropdown.Item>
               <NavDropdown.Divider /> 
               <NavDropdown.Item href="/quiz">Quizzes</NavDropdown.Item>
+              <NavDropdown.Item href="/faq">Faqs</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.5">Affirmations</NavDropdown.Item>
             </NavDropdown>
           </Nav>
@@ -127,4 +129,5 @@ const CustomNavbar = () => {
 };
 
 export default CustomNavbar;
+
 

@@ -5,7 +5,7 @@ import MeditationResources from './MeditationResources';
 
 const Relax = () => {
   return (
-    <div className="relax-page">
+    <div className="relax-page" >
       {/* <CalmingVideosSlider />
       <SleepStories /> */}
       <MeditationResources />

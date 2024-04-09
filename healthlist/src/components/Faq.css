@@ -1,36 +1,52 @@
+/* Faq.css */
 
-
-
-
-/* Styles for FAQ Container */
+/* Background image */
 .faq-container {
-    max-width: 800px; /* Set maximum width */
-    margin: 0 auto; /* Center align container */
-    padding: 20px; /* Add padding */
-  }
-  
-  /* Styles for FAQ Items */
-  .faq-item {
-    margin-bottom: 30px; /* Add margin between FAQ items */
-  }
-  
-  /* Styles for FAQ Box */
-  .faq-box {
-    background-color: #f9f9f9; /* Set background color */
-    border: 1px solid #ddd; /* Add border */
-    padding: 20px; /* Add padding */
-  }
-  
-  /* Styles for FAQ Question */
-  .faq-box h3 {
-    margin-bottom: 10px; /* Add margin below question */
-    font-size: 20px; /* Set font size for question */
-    color: #333; /* Set text color */
-  }
-  
-  /* Styles for FAQ Answer */
-  .faq-box p {
-    font-size: 16px; /* Set font size for answer */
-    color: #666; /* Set text color */
-  }
-  
+  background-image: url('https://media.istockphoto.com/id/1301477619/vector/abstract-minimal-hand-painted-pattern.jpg?s=612x612&w=0&k=20&c=ugue1WqvN7KGq-RDcxMoVww0GaweYMaChjhcgmITSGw=');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Main container styling */
+.faq-container {
+  padding: 50px;
+}
+
+/* FAQ item styling */
+.faq-item {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+}
+
+/* FAQ box styling */
+.faq-box {
+  padding: 20px;
+}
+
+/* Heading styling */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}

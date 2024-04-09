@@ -22,7 +22,6 @@ import MeditationResources from './components/MeditationResources';
 import Contact from './components/Contact';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 
-
 function App() {
    const router=createBrowserRouter([
     {
@@ -105,6 +104,7 @@ function App() {
       element: <Contact/>
     },
      
+   
 
 
    ])
