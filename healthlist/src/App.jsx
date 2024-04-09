@@ -53,6 +53,7 @@ function App() {
       path: "/quiz",
       element: <Quiz/>
     },
+   
     {
       path: "/anxietyquiz",
       element: <AnxietyQuiz/>
