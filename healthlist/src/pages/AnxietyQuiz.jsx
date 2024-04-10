@@ -204,7 +204,7 @@ const AnxietyQuiz = () => {
   };
 
   const getResult = () => {
-    // Define your ranges and corresponding result messages here
+  
     const ranges = [
       { min: 0, max: 10, result: "No or Minimal Anxiety" },
       { min: 11, max: 20, result: "Mild Anxiety" },

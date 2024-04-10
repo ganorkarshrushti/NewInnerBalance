@@ -134,12 +134,51 @@ const DepressionQuiz = () => {
 export default DepressionQuiz;
 */
 import React, { useState } from "react";
-import "./DepressionQuiz.css";
-import DepressionResult from "./DepressionResult";
+import './DepressionQuiz.css';
+import DepressionResult from "./DepressionResult"; // Import your result component here
 
 const DepressionQuiz = () => {
   const [questions, setQuestions] = useState([
-    // Your questions and answers array
+    {
+      question: "I have lost interest in activities I used to enjoy.",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    },
+    {
+      question: "I have difficulty concentrating or making decisions.",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    },
+    {
+      question: "I have feelings of worthlessness or guilt.",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    },
+    {
+      question: "I have thoughts of death or suicide.",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    },
+    {
+      question: "I have changes in my appetite.",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    },
+    {
+      question: "I have changes in my sleep patterns.",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    },
+    {
+      question: "I have decreased energy levels.",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    },
+    {
+      question: "I have difficulty controlling my emotions.",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    },
+    {
+      question: "I have physical aches and pains.",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    },
+    {
+      question: "I have withdrawn from social activities.",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    },
   ]);
 
   const [score, setScore] = useState(0);
@@ -158,7 +197,7 @@ const DepressionQuiz = () => {
   };
 
   const updateScore = () => {
-    const answerValue = clickedOption;
+    const answerValue = clickedOption; // Use the clicked option as the answer value
     setScore((prevScore) => prevScore + answerValue);
   };
 
@@ -170,6 +209,20 @@ const DepressionQuiz = () => {
   };
 
   const isQuizOver = currentQuestion === questions.length;
+
+  const getResult = () => {
+    const ranges = [
+      { min: 0, max: 10, result: "No or Minimal Depression" },
+      { min: 11, max: 20, result: "Mild Depression" },
+      { min: 21, max: 30, result: "Moderate Depression" },
+      { min: 31, max: 40, result: "Severe Depression" },
+    ];
+
+    // Find the range that matches the score
+    const result = ranges.find((range) => score >= range.min && score <= range.max);
+
+    return result ? result.result : "Error: Result not found";
+  };
 
   return (
     <div className="commonQuiz">
@@ -198,13 +251,9 @@ const DepressionQuiz = () => {
             <h2 className="result-heading">Result</h2>
             <h3 className="score">{score}</h3>
             {isQuizOver && !showResult ?  (
-              <button onClick={() => setShowResult(true)} id="submit-button"className='button'>
-                Submit
-              </button>
+              <DepressionResult score={score} />
             ) : null}
-            
-            {showResult ? <DepressionResult score={score} /> : null}
-            <button onClick={handleResetClick} id="retake-button" className="button">
+            <button onClick={handleResetClick} className="button">
               Restart Quiz
             </button>
           </div>

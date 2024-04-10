@@ -1,3 +1,71 @@
+
+import React from 'react';
+import styles from './Home.module.css';
+import bghome from '../images/perfectbg.jpg';
+import image1 from '../images/quizz.jpg';
+import image2 from '../images/carem.jpg';
+import image3 from '../images/faq.jpg';
+
+const Home = () => {
+    return (
+        <div className={styles['home-container']} style={{ backgroundImage: `url(${bghome})`, minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="container text-center" style={{ paddingTop: '90px' }}>
+                <h1 className="display-4 mb-4 text-dark">InnerBalance - The Mental Health Checker</h1>
+                <p className="lead">
+                    Embark on a transformative journey with InnerBalance - your trusted companion in mental well-being. Explore a sanctuary of self-care, where each step brings you closer to harmony and fulfillment.
+                </p>
+                <a href="/" className={styles['get-started-btn']}>Get Started</a>
+            </div>
+         
+            <div className={styles['content-block-container']} style={{ paddingTop: '60px' }}>
+               
+                <div className={styles['content-block']}>
+                    <img src={image1} alt="Image 1" />
+                    <div className={styles['text']}>
+                        <h2>Take Our Diagnostic Quizzes</h2>
+                        <p>Discover our diagnostic quizzes designed to help you evaluate your mental well-being. Take a moment to explore and gain insights into your mental health.</p>
+                        <a href="/quiz" className={styles['learn-more-btn']}>
+                            Take a Quick Quiz
+                        </a>
+                    </div>
+                </div>
+                
+                <div className={styles['content-block']}>
+                    <img src={image2} alt="Image 2" />
+                    <div className={styles['text']}>
+                        <h2>Mental Disorders</h2>
+                        <p>Gain meaningful insights into mental disorders and their repercussions on individuals and society. Dive into our specialized page to delve deeper into mental health challenges and discover articles that offer solutions.</p>
+                        <a href="/articles" className={styles['learn-more-btn']}>
+                            Read Articles
+                        </a>
+                    </div>
+                </div>
+               
+                <div className={styles['content-block']}>
+                    <img src={image3} alt="Image 3" />
+                    <div className={styles['text']}>
+                        <h2>FAQs</h2>
+                        <p>
+Step into the realm of our page's FAQs, where a treasure trove of eloquently phrased answers awaits your exploration.</p>
+                        <a href="/faq" className={styles['learn-more-btn']}>
+                            Explore Faqs
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Home;
+
+
+
+
+
+
+
+
 // import React, { useState } from 'react';
 // // import './Home.css';
 // import styles from './Home.module.css';
@@ -384,64 +452,3 @@ const Home = () => {
 
 export default Home;
 */
-
-import React from 'react';
-import styles from './Home.module.css';
-import bghome from '../images/perfectbg.jpg';
-import image1 from '../images/quizz.jpg';
-import image2 from '../images/carem.jpg';
-import image3 from '../images/faq.jpg';
-
-const Home = () => {
-    return (
-        <div className={styles['home-container']} style={{ backgroundImage: `url(${bghome})`, minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-            <div className="container text-center" style={{ paddingTop: '90px' }}>
-                <h1 className="display-4 mb-4 text-dark">InnerBalance - The Mental Health Checker</h1>
-                <p className="lead">
-                    Embark on a transformative journey with InnerBalance - your trusted companion in mental well-being. Explore a sanctuary of self-care, where each step brings you closer to harmony and fulfillment.
-                </p>
-                <a href="/" className={styles['get-started-btn']}>Get Started</a>
-            </div>
-         
-            <div className={styles['content-block-container']} style={{ paddingTop: '60px' }}>
-               
-                <div className={styles['content-block']}>
-                    <img src={image1} alt="Image 1" />
-                    <div className={styles['text']}>
-                        <h2>Take Our Diagnostic Quizzes</h2>
-                        <p>Discover our diagnostic quizzes designed to help you evaluate your mental well-being. Take a moment to explore and gain insights into your mental health.</p>
-                        <a href="/quiz" className={styles['learn-more-btn']}>
-                            Take a Quick Quiz
-                        </a>
-                    </div>
-                </div>
-                
-                <div className={styles['content-block']}>
-                    <img src={image2} alt="Image 2" />
-                    <div className={styles['text']}>
-                        <h2>Mental Disorders</h2>
-                        <p>Gain meaningful insights into mental disorders and their repercussions on individuals and society. Dive into our specialized page to delve deeper into mental health challenges and discover articles that offer solutions.</p>
-                        <a href="/articles" className={styles['learn-more-btn']}>
-                            Read Articles
-                        </a>
-                    </div>
-                </div>
-               
-                <div className={styles['content-block']}>
-                    <img src={image3} alt="Image 3" />
-                    <div className={styles['text']}>
-                        <h2>FAQs</h2>
-                        <p>
-Step into the realm of our page's FAQs, where a treasure trove of eloquently phrased answers awaits your exploration.</p>
-                        <a href="/faq" className={styles['learn-more-btn']}>
-                            Explore Faqs
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-};
-
-export default Home;
-

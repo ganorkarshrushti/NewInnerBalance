@@ -3,11 +3,12 @@ import React from 'react';
 // import SleepStories from './SleepStories';
 import MeditationResources from './MeditationResources';
 
+
 const Relax = () => {
   return (
     <div className="relax-page" >
-      {/* <CalmingVideosSlider />
-      <SleepStories /> */}
+      {/* <CalmingVideosSlider /> */}
+      {/* <SleepStories /> */}
       <MeditationResources />
     </div>
   );

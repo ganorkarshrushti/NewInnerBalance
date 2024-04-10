@@ -1,9 +1,9 @@
-/* DepressionArt.css */
+
 
 .mental-illness-page {
-    max-width: 800px; /* Set maximum width for better readability */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 20px; /* Add padding around the content */
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
 
 .mental-illness-page h2 {
@@ -12,8 +12,8 @@
 }
 
 .image-container {
-    position: relative; /* Positioning for next/previous buttons */
-    margin-bottom: 20px; /* Add space below the image */
+    position: relative; 
+    margin-bottom: 20px;
 }
 
 .image-container img {

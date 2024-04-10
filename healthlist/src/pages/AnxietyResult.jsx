@@ -5,7 +5,6 @@ const AnxietyResult = ({ score }) => {
     <div className="result-container">
       <h3>Additional Information:</h3>
       <p>
-       
         {score <= 10 && "Your anxiety level is very low. Keep up the good work in managing your stress."}
         {score > 10 && score <= 20 && "You are experiencing mild anxiety. Consider practicing relaxation techniques or seeking support if needed."}
         {score > 20 && score <= 30 && "Your anxiety level is moderate. It may be helpful to explore stress-reduction strategies or talk to a mental health professional."}
