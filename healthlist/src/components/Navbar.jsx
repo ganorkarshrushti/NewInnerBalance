@@ -92,7 +92,6 @@ import React from 'react';
 import './Navbar.css';
 import logo from '../images/logo5.jpg'; 
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import bghome from '../images/perfectbg.jpg';
 const CustomNavbar = () => { 
   return (
     <Navbar expand="lg" className="navbar-dark bg-body-tertiary">

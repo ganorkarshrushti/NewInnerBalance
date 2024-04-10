@@ -387,11 +387,7 @@ export default Home;
 
 import React from 'react';
 import styles from './Home.module.css';
-import Faq from './Faq';
-// Import your background image
 import bghome from '../images/perfectbg.jpg';
-
-// Import images from the components images folder
 import image1 from '../images/quizz.jpg';
 import image2 from '../images/carem.jpg';
 import image3 from '../images/faq.jpg';
@@ -415,7 +411,7 @@ const Home = () => {
                         <h2>Take Our Diagnostic Quizzes</h2>
                         <p>Discover our diagnostic quizzes designed to help you evaluate your mental well-being. Take a moment to explore and gain insights into your mental health.</p>
                         <a href="/quiz" className={styles['learn-more-btn']}>
-                            Learn More
+                            Take a Quick Quiz
                         </a>
                     </div>
                 </div>
@@ -426,7 +422,7 @@ const Home = () => {
                         <h2>Mental Disorders</h2>
                         <p>Gain meaningful insights into mental disorders and their repercussions on individuals and society. Dive into our specialized page to delve deeper into mental health challenges and discover articles that offer solutions.</p>
                         <a href="/articles" className={styles['learn-more-btn']}>
-                            Learn More
+                            Read Articles
                         </a>
                     </div>
                 </div>
@@ -438,7 +434,7 @@ const Home = () => {
                         <p>
 Step into the realm of our page's FAQs, where a treasure trove of eloquently phrased answers awaits your exploration.</p>
                         <a href="/faq" className={styles['learn-more-btn']}>
-                            Learn More
+                            Explore Faqs
                         </a>
                     </div>
                 </div>

@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import './Help.css';
 
@@ -8,7 +7,7 @@ const Home = () => {
     <div className="home-container">
       {/* Other content of the Home page */}
 
-      {/* Help Now Section */}
+    
       <section className="help-now-section">
         <h2>Need Help Now?</h2>
         <p>If you are in crisis or need immediate assistance, please reach out to one of the following helplines:</p>

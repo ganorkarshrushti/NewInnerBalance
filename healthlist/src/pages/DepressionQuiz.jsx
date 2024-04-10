@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+/*import React, { useState, useEffect } from "react";
 import './DepressionQuiz.css';
 
 const DepressionQuiz = () => {
@@ -121,6 +121,89 @@ const DepressionQuiz = () => {
               ) : null}
             
             {score > 1 ? <DepressionResult score={score} /> : null}
+            <button onClick={handleResetClick} id="retake-button" className="button">
+              Restart Quiz
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default DepressionQuiz;
+*/
+import React, { useState } from "react";
+import "./DepressionQuiz.css";
+import DepressionResult from "./DepressionResult";
+
+const DepressionQuiz = () => {
+  const [questions, setQuestions] = useState([
+    // Your questions and answers array
+  ]);
+
+  const [score, setScore] = useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [clickedOption, setClickedOption] = useState(0);
+  const [showResult, setShowResult] = useState(false);
+
+  const changeQuestion = () => {
+    updateScore();
+    if (currentQuestion < questions.length) {
+      setCurrentQuestion(currentQuestion + 1);
+      setClickedOption(0);
+    } else {
+      setShowResult(true);
+    }
+  };
+
+  const updateScore = () => {
+    const answerValue = clickedOption;
+    setScore((prevScore) => prevScore + answerValue);
+  };
+
+  const handleResetClick = () => {
+    setScore(0);
+    setCurrentQuestion(0);
+    setShowResult(false);
+    setClickedOption(0);
+  };
+
+  const isQuizOver = currentQuestion === questions.length;
+
+  return (
+    <div className="commonQuiz">
+      <div className="container">
+        <h2>DEPRESSION TEST</h2>
+        {!isQuizOver ? (
+          <div className="Quiz-question-option">
+            <h3>{questions[currentQuestion].question}</h3>
+            <p>
+              {questions[currentQuestion].answers.map((answer, answerIndex) => (
+                <button
+                  className={`option-btn ${
+                    clickedOption === answerIndex + 1 ? "checked" : null
+                  }`}
+                  key={answerIndex}
+                  onClick={() => setClickedOption(answerIndex + 1)}
+                >
+                  {answer}
+                </button>
+              ))}
+            </p>
+            <input type="button" value="Next" id="next-button" onClick={changeQuestion} />
+          </div>
+        ) : (
+          <div>
+            <h2 className="result-heading">Result</h2>
+            <h3 className="score">{score}</h3>
+            {isQuizOver && !showResult ?  (
+              <button onClick={() => setShowResult(true)} id="submit-button"className='button'>
+                Submit
+              </button>
+            ) : null}
+            
+            {showResult ? <DepressionResult score={score} /> : null}
             <button onClick={handleResetClick} id="retake-button" className="button">
               Restart Quiz
             </button>

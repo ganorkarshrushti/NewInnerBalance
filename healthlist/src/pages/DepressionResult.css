@@ -1,0 +1,40 @@
+.result-container {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .result-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result-container h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .result-container p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  .result-container p:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  
+  .result-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .result-container a:hover {
+    text-decoration: underline;
+  }
+  

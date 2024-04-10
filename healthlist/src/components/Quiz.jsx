@@ -20,7 +20,6 @@ const Quiz = () => {
         </center>
 
         <div className="quiz-row">
-          {/* First section of quizzes */}
           <div className="card">
             <div className="card-image">
               <img src={quiz1Image} alt="Quiz 1" />
@@ -56,7 +55,6 @@ const Quiz = () => {
             </div>
           </div>
           </div>
-          {/* Start of second section and end of first */}
           <div className="quiz-row">
           <div className="card">
             <div className="card-image">
@@ -91,10 +89,7 @@ const Quiz = () => {
               <button><Link to="/SocialQuiz">Take Quiz</Link></button>
             </div>
           </div>
-          {/* End of the second section */}
         </div>
-
-        {/* Text note at the end */}
         <div className="end-note">
           <marquee>
           NOTE : Please remember that the results of these quizzes are not a substitute
