@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './PtsdQuiz.css';
 
-const PTSDQuiz = () => {
+const PtsdQuiz = () => {
   const [questions, setQuestions] = useState([
     {
       question: "Have you experienced a traumatic event?",
@@ -47,30 +47,48 @@ const PTSDQuiz = () => {
 
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [clickedOption, setClickedOption] = useState(null);
+  const [clickedOption, setClickedOption] = useState(0);
   const [showResult, setShowResult] = useState(false);
 
   const changeQuestion = () => {
-    if (clickedOption === null) return; // Prevent changing question if option not selected
     updateScore();
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
-      setClickedOption(null);
+      setClickedOption(0);
     } else {
       setShowResult(true);
     }
   };
 
   const updateScore = () => {
-    const answerValue = clickedOption === "Yes" ? 1 : 0;
+    const answerValue = clickedOption;
     setScore((prevScore) => prevScore + answerValue);
+  };
+
+  const handleOptionClick = (answerIndex) => {
+    setClickedOption(answerIndex + 1);
+    setTimeout(changeQuestion, 1000); // Automatically move to the next question after 1 second
   };
 
   const handleResetClick = () => {
     setScore(0);
     setCurrentQuestion(0);
     setShowResult(false);
-    setClickedOption(null);
+    setClickedOption(0);
+  };
+
+  const getResult = () => {
+    const ranges = [
+      { min: 0, max: 10, result: "No or Minimal PTSD" },
+      { min: 11, max: 20, result: "Mild PTSD" },
+      { min: 21, max: 30, result: "Moderate PTSD" },
+      { min: 31, max: 40, result: "Severe PTSD" },
+    ];
+
+    // Find the range that matches the score
+    const result = ranges.find((range) => score >= range.min && score <= range.max);
+
+    return result ? result.result : "Error: Result not found";
   };
 
   return (
@@ -79,28 +97,28 @@ const PTSDQuiz = () => {
         <h2>PTSD TEST</h2>
         {!showResult ? (
           <div className="Quiz-question-option">
-            <h3>{questions[currentQuestion].question}</h3>
-            <div>
-              {questions[currentQuestion].answers.map((answer, index) => (
+            <h3>{currentQuestion + 1}. {questions[currentQuestion].question}</h3>
+            <p>
+              {questions[currentQuestion].answers.map((answer, answerIndex) => (
                 <button
-                  key={index}
                   className={`option-btn ${
-                    clickedOption === answer ? "checked" : null
+                    clickedOption === answerIndex + 1 ? "checked" : null
                   }`}
-                  onClick={() => setClickedOption(answer)}
+                  key={answerIndex}
+                  onClick={() => handleOptionClick(answerIndex)}
                 >
                   {answer}
                 </button>
               ))}
-            </div>
-            <input type="button" value="Next" id="next-button" onClick={changeQuestion} />
+            </p>
           </div>
         ) : (
           <div>
             <h2 className="result-heading">Result</h2>
-            <h3 className="score">{score}</h3>
-            <button onClick={handleResetClick} id="retake-button" className="button">
-              Retake Quiz
+            <h3 className="score">{getResult()}</h3>
+            <PtsdResult score={score} />
+            <button onClick={handleResetClick} className="button">
+              Restart Quiz
             </button>
           </div>
         )}
@@ -109,4 +127,4 @@ const PTSDQuiz = () => {
   );
 };
 
-export default PTSDQuiz;
+export default PtsdQuiz;

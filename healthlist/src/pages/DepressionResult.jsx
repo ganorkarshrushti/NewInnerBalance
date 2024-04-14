@@ -10,7 +10,6 @@ const DepressionResult = ({ score }) => {
         {score > 20 && score <= 30 && "Your depression level is moderate. It may be beneficial to seek professional help and explore treatment options."}
         {score > 30 && "Your depression level is severe. Please seek immediate help from a mental health professional or contact a crisis hotline."}
       </p>
-      
       <p>
         If you need support, remember that there are people who care about you and resources available to help you through this difficult time.
       </p>

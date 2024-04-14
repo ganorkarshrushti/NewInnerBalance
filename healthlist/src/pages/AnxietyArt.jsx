@@ -1,3 +1,21 @@
+
+
+import React from 'react';
+import './AnxietyArt.css';
+
+const Anxiety = () => {
+  return (
+    <div className="mental-illness-page">
+      <h2>Anxiety Disorder</h2>
+
+      <p>If you want to learn more about anxiety disorders, you can read <a href="https://newsinhealth.nih.gov/2016/03/understanding-anxiety-disorders" target="_blank" rel="noopener noreferrer">this article</a>.</p>
+    </div>
+  );
+};
+
+export default Anxiety;
+
+/*
 import React, { useState } from 'react';
 import './AnxietyArt.css';
 const Anxiety = () => {
@@ -64,4 +82,4 @@ const Anxiety = () => {
   );
 };
 
-export default Anxiety;
+export default Anxiety;*/

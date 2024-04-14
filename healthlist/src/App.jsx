@@ -13,8 +13,8 @@ import OcdQuiz from './pages/OcdQuiz';
 import SocialQuiz from './pages/SocialQuiz';
 import PtsdQuiz from './pages/PtsdQuiz';
 import Articles from './components/Articles';
+import MoreArticles from './pages/MoreArticles';
 import AnxietyArt from './pages/AnxietyArt';
-
 import DepressionArt from './pages/DepressionArt';
 import OcdArt from './pages/OcdArt';
 import Journal from  './components/Journal';
@@ -104,6 +104,10 @@ function App() {
     {
       path: "/journal",
       element: <Journal/>
+    },
+    {
+      path: "/morearticles",
+      element: <MoreArticles/>
     },
     {
       path: "/exercisemed",

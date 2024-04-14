@@ -1,97 +1,96 @@
 /* quiz menu CSS */
 
 .commonQuiz .container {
-    margin-top: 2%;
-    margin-bottom: 5%;
-    align-items: center;
-    min-height: 100%;
-    width: 80%;
-    border-radius: 15px;
-    overflow: hidden;
-    padding: 40px;
-    background-image: url("./images/quizbg-min.png");
-    margin-left: 10%;
-    height: 70%;
-  }
-  
-  .commonQuiz .commonQuiz-h2 {
-    text-decoration: underline;
-    margin-bottom: 1em;
-  }
-  
-  .commonQuiz .commonQuiz-h3 {
-    font-size: 1.75em;
-    margin-bottom: 2em;
-    text-align: center;
-  }
-  
-  .commonQuiz .commonQuiz-question-option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .commonQuiz .option-container {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .commonQuiz .option-btn {
-    font-size: 1em;
-    box-shadow: 0px 0px 6px 1px rgb(26, 24, 24);
-    padding: 20px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    transition: 0.3s;
-    margin: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    opacity: 0.7;
-  }
-  
-  .commonQuiz .option-btn.checked,
-  .commonQuiz .option-btn:hover {
-    background-color: rgb(26, 2, 73);
-    color: rgb(255, 255, 255);
-    box-shadow: 4px 4px 6px 2px rgb(78, 69, 78);
-  }
-  
-  .commonQuiz .button {
-    font-size: 1.25em;
-    box-shadow: 2px 2px 4px rgba(255, 132, 132, 0.2);
-    border-radius: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-  }
-  
-  .commonQuiz .button:hover {
-    transform: scale(1.1);
-    box-shadow: 4px 4px 6px rgba(215, 66, 66, 0.4);
-  }
-  
-  .commonQuiz .result-heading {
-    text-align: center;
-    color: red;
-    font-size: 1.75em;
-    margin-bottom: 20px;
-  }
-  
-  .commonQuiz .score {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .commonQuiz .end-note {
-    margin-top: 2.5em;
-    text-align: center;
-    color: red;
-    font-size: 1.25em;
-    margin-bottom: 50px;
-  }
-  
+  margin-top: 2%;
+  margin-bottom: 5%;
+  align-items: center;
+  min-height: 100%;
+  width: 80%;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 40px;
+  background-image: url("./images/quizbg-min.png");
+  margin-left: 10%;
+  height: 70%;
+}
+
+.commonQuiz .commonQuiz-h2 {
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+
+.commonQuiz .commonQuiz-h3 {
+  font-size: 1.75em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.commonQuiz .commonQuiz-question-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.commonQuiz .option-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+.commonQuiz .option-btn {
+  font-size: 1em;
+  box-shadow: 0px 0px 6px 1px rgb(26, 24, 24);
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  margin: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.commonQuiz .option-btn.checked,
+.commonQuiz .option-btn:hover {
+  background-color: rgb(26, 2, 73);
+  color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 6px 2px rgb(78, 69, 78);
+}
+
+.commonQuiz .button {
+  font-size: 1.25em;
+  box-shadow: 2px 2px 4px rgba(255, 132, 132, 0.2);
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.commonQuiz .button:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 6px rgba(215, 66, 66, 0.4);
+}
+
+.commonQuiz .result-heading {
+  text-align: center;
+  color: red;
+  font-size: 1.75em;
+  margin-bottom: 20px;
+}
+
+.commonQuiz .score {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.commonQuiz .end-note {
+  margin-top: 2.5em;
+  text-align: center;
+  color: red;
+  font-size: 1.25em;
+  margin-bottom: 50px;
+}
