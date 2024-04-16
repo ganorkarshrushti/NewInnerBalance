@@ -1,28 +1,16 @@
-/* Affirmations.css */
-.Affirmations {
-    margin-bottom: 20px;
-  }
-  
-  .Affirmations img {
-    max-width: 100%;
-    max-height: 200px; /* Adjust the height as needed */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-/*.container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-  }
-  
-  .Affirmations {
-    margin: 10px;
-    width: 200px;
-    padding: 30px;
-  }
+.container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
 
-  .Affirmations img {
-    width: 100%;
-    height: auto;
-  }*/
+.card {
+  margin: 10px;
+  width: 200px;
+  padding: 30px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}

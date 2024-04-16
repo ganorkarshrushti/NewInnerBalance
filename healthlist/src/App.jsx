@@ -28,6 +28,7 @@ import Price from './components/Price';
 import Contact from './components/Contact';
 import LoginPage from './components/LoginPage';
 import SignUp from './components/SignUp';
+// import Card from './components/Card';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 
@@ -37,6 +38,10 @@ function App() {
       path: "/",
       element: <Home/>
     },
+    // {
+    //   path: "card",
+    //   element: <Card/>
+    // },
     {
       path: "/price",
       element: <Price/>
