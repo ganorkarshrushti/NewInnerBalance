@@ -77,7 +77,7 @@ const Affirmation = () => {
     "https://i.pinimg.com/236x/9b/da/e9/9bdae94aa067c566785f2097870d2d38.jpg",
     "https://i.pinimg.com/236x/94/3e/2f/943e2f71a3323d8c62591d6602215a89.jpg",
     "https://i.pinimg.com/474x/e6/fb/be/e6fbbef8b1d610fe5c976cc14fcce4ca.jpg",
-    "https://i.pinimg.com/236x/bd/cf/ff/bdcfff7937071ab68552607c4a65b0fb.jpg",
+    "https://i.pinimg.com/474x/c4/00/61/c400614679437a608c3bd580191bdead.jpg",
     "https://i.pinimg.com/236x/ab/94/d8/ab94d8a98cfed2ce9a8aa2dda4217751.jpg",
     "https://i.pinimg.com/474x/50/1c/25/501c2510dad2d090c1fcdb4bd669c6ec.jpg",
     "https://i.pinimg.com/236x/74/10/00/7410002445230ccbeeb0838f1c9bb716.jpg",
