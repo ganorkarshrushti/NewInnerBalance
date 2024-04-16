@@ -15,18 +15,18 @@ const CustomNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
             <Nav.Link href="/" className="text-black mx-2">Home</Nav.Link>
-            <Nav.Link href="/" className="text-black mx-2"> Appointment Booking </Nav.Link>
+            <Nav.Link href="/therapistcard" className="text-black mx-2"> Appointment Booking </Nav.Link>
             <Nav.Link href="/help" className="text-black mx-2">Help Now</Nav.Link>
             <Nav.Link href="/contact" className="text-black mx-2">Contact</Nav.Link>
           
             <NavDropdown title="Explore" id="basic-nav-dropdown" className="text-black mx-2">
               <NavDropdown.Item href="/articles">Articles</NavDropdown.Item>
-              <NavDropdown.Item href="/meditationresources">Exercise & Meditation</NavDropdown.Item>
+              <NavDropdown.Item href="/exercisemed">Exercise & Meditation</NavDropdown.Item>
               <NavDropdown.Item href="/journal">Journal</NavDropdown.Item>
               <NavDropdown.Divider /> 
               <NavDropdown.Item href="/quiz">Quizzes</NavDropdown.Item>
               <NavDropdown.Item href="/faq">Faqs</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.5">Affirmations</NavDropdown.Item>
+              <NavDropdown.Item href="/affirmations">Affirmations</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav className="ms-auto">

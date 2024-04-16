@@ -1,0 +1,64 @@
+.Price {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px;
+    margin: 30px;
+  }
+  .expiry-cvc-container {
+  display: flex;
+  align-items: center;
+}
+
+.expiry-cvc-container label {
+  flex: 1;
+  margin-right: 5px; /* Adjust spacing between label and input */
+}
+  .card {
+    width: calc(50% - 10px); /* Adjust the width of the cards as needed */
+    margin: 20px; /* Add some space between the cards */
+    border: 1px solid #ccc; /* Add border for cards */
+    border-radius: 5px; /* Add border radius for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for cards */
+  }
+  
+  .card-header {
+    background-color: #007bff; /* Header background color */
+    color: #fff; /* Header text color */
+    font-size: 20px;
+    padding: 10px; /* Header padding */
+    border-top-left-radius: 5px; /* Border radius for top-left corner */
+    border-top-right-radius: 5px; /* Border radius for top-right corner */
+  }
+  
+  .card-body {
+    padding: 5px; /* Body padding */
+  }
+  
+  label {
+    display: block; /* Display labels as block */
+    margin-bottom: 10px; /* Add some space between labels */
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%; /* Set input and textarea width to 100% */
+    padding: 8px; /* Input padding */
+    margin-bottom: 15px; /* Add some space between inputs */
+    border: 1px solid #ccc; /* Input border */
+    border-radius: 4px; /* Input border radius */
+  }
+  
+  button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Button border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    outline: none; /* Remove button outline */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }

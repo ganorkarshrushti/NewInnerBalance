@@ -20,6 +20,11 @@ import OcdArt from './pages/OcdArt';
 import Journal from  './components/Journal';
 import Exercisemed from  './components/Exercisemed';
 import MeditationResources from './components/MeditationResources';
+import CalmingVideosSlider from './components/CalmingVideosSlider';
+import Affirmations from './components/Affirmations';
+import TherapistCard from './components/TherapistCard';
+import UserApp from './components/UserApp';
+import Price from './components/Price';
 import Contact from './components/Contact';
 import LoginPage from './components/LoginPage';
 import SignUp from './components/SignUp';
@@ -31,6 +36,18 @@ function App() {
     {
       path: "/",
       element: <Home/>
+    },
+    {
+      path: "/price",
+      element: <Price/>
+    },
+    {
+      path: "/userapp",
+      element: <UserApp/>
+    },
+    {
+      path: "/therapistcard",
+      element: <TherapistCard/>
     },
   
     {
@@ -69,6 +86,11 @@ function App() {
       path: "/adhdquiz",
       element: <AdhdQuiz/>
     },
+    {
+      path: "/calmingvideosslider",
+      element: <CalmingVideosSlider/>
+    },
+  
 
     {
       path: "/ocdquiz",
@@ -120,6 +142,10 @@ function App() {
     {
       path: "/contact",
       element: <Contact/>
+    },
+    {
+      path: "/affirmations",
+      element: <Affirmations/>
     },
     
 
