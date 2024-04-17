@@ -37,7 +37,7 @@
     margin: 10px;
     padding: 10px;
   }
-  
+  /*
   .commonQuiz .option-btn {
     font-size: 1em;
     box-shadow: 0px 0px 6px 1px rgb(26, 24, 24);
@@ -59,7 +59,31 @@
     background-color: rgb(26, 2, 73);
     color: rgb(255, 255, 255);
     box-shadow: 4px 4px 6px 2px rgb(78, 69, 78);
-  }
+  }*/
+  .commonQuiz .option-btn {
+    font-size: 1em;
+    box-shadow: 0px 0px 6px 1px rgb(26, 24, 24);
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    margin: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: black; /* Set default text color to black */
+    opacity: 0.7;
+}
+
+.commonQuiz .option-btn.checked,
+.commonQuiz .option-btn:hover {
+    background-color: rgb(26, 2, 73);
+    color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 6px 2px rgb(78, 69, 78);
+}
+
   
   .commonQuiz .button {
     font-size: 1.25em;

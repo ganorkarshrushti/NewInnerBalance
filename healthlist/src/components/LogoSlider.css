@@ -1,0 +1,102 @@
+/* LogoSlider.css */
+
+.home-logoSlider-mainContainer {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home-logoSlider-mainContainer h2 {
+    text-align: center;
+}
+
+.home-logoSlider-container {
+    text-align: center;
+}
+
+.home-logoSlider-container img {
+    max-width: 80px; /* Adjust the max-width of logos */
+    max-height: 60px; /* Adjust the max-height of logos */
+    margin: 0 auto;
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 20px;
+    line-height: 1;
+    color: #333;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    color: #555;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.slick-slide {
+    flex: 0 0 auto;
+    height: auto;
+    padding: 0 5px; /* Adjust the padding between logos */
+}
+
+.slick-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.slick-dots {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots li button {
+    font-size: 12px;
+    line-height: 1;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.slick-dots li button:hover {
+    background: #333;
+    color: #fff;
+}

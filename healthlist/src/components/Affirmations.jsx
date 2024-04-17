@@ -54,8 +54,9 @@ const Affirmation = () => {
 };
 
 export default Affirmation; */
+
 import React from "react";
-import './Affirmations.css';
+//import './Affirmations.css';
 
 const Card = ({ imageUrl }) => {
   return (
@@ -71,7 +72,8 @@ const Affirmation = () => {
     "https://i.pinimg.com/236x/5e/3e/10/5e3e10024b9e0b117e4497b2ebcffb8f.jpg",
     "https://i.pinimg.com/474x/f6/c7/e6/f6c7e636eb57dadbd4d50d5f8ea82e27.jpg",
     "https://i.pinimg.com/236x/38/0d/6d/380d6dc9ab3c0e702aa63402e2296c10.jpg",
-    "https://i.pinimg.com/236x/36/a0/d6/36a0d6648e1782585d5202a45db25581.jpg",
+    // "https://i.pinimg.com/236x/36/a0/d6/36a0d6648e1782585d5202a45db25581.jpg",
+    "https://i.pinimg.com/474x/20/77/04/207704db0fd64e0e61197981096e1441.jpg",
     "https://i.pinimg.com/564x/6e/f7/f0/6ef7f06603a74a4f4d611d0c705afa5d.jpg",
     "https://i.pinimg.com/236x/5b/8c/c3/5b8cc3562278af5a1dbefe04c444bed0.jpg",
     "https://i.pinimg.com/236x/9b/da/e9/9bdae94aa067c566785f2097870d2d38.jpg",

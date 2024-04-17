@@ -1,5 +1,6 @@
 import React from 'react';
 import './Help.css';
+import LogoSlider from './LogoSlider'; // Import the LogoSlider component
 
 const Help = () => {
   // Define the helpline numbers
@@ -52,14 +53,9 @@ const Help = () => {
             </div>
           ))}
         </div>
+        {/* Display the LogoSlider component */}
         <div className="helpline-slider">
-          {/* Slider for helpline numbers */}
-          {helplineNumbers.map((helpline) => (
-            <div className="helpline-number" key={helpline.id}>
-              <h3>{helpline.name}</h3>
-              <p>{helpline.number}</p>
-            </div>
-          ))}
+          <LogoSlider />
         </div>
       </section>
     </div>
@@ -67,35 +63,3 @@ const Help = () => {
 };
 
 export default Help;
-
-
-
-/*
-import React from 'react';
-import './Help.css';
-
-const Home = () => {
-  return (
-    <div className="home-container">
-    
-      <section className="help-now-section">
-        <h2>Need Help Now?</h2>
-        <p>If you are in crisis or need immediate assistance, please reach out to one of the following helplines:</p>
-        <div className="emergency-numbers">
-          <div className="emergency-number">
-            <h3>National Suicide Prevention Lifeline</h3>
-            <p>Call: <a href="tel:1-800-273-TALK">(800) 273-TALK</a></p>
-          </div>
-          <div className="emergency-number">
-            <h3>Crisis Text Line</h3>
-            <p>Text "HOME" to <a href="sms:741741">741741</a></p>
-          </div>
-          
-        </div>
-      </section>
-    </div>
-  );
-};
-
-export default Home;
-*/
