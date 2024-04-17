@@ -29,6 +29,7 @@ import Contact from './components/Contact';
 import LoginPage from './components/LoginPage';
 import SignUp from './components/SignUp';
 import LogoSlider from './components/LogoSlider';
+import Footer from './components/Footer';
 // import Card from './components/Card';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 
@@ -37,6 +38,10 @@ function App() {
     {
       path: "/",
       element: <Home/>
+    },
+    {
+      path: "/Footer",
+      element: <Footer/>
     },
     {
       path: "/logoslider",

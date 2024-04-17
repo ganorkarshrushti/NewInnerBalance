@@ -5,6 +5,9 @@ import bghome from '../images/perfectbg.jpg';
 import image1 from '../images/quizz.jpg';
 import image2 from '../images/carem.jpg';
 import image3 from '../images/yoga.webp';
+//import Footer from './components/Footer';
+import Footer from './Footer';
+
 
 const Home = () => {
     return (
@@ -52,6 +55,7 @@ const Home = () => {
                     </div>  
                 </div>
             </div>
+            <Footer /> 
         </div>
     );
 };
