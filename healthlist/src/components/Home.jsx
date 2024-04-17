@@ -4,7 +4,7 @@ import styles from './Home.module.css';
 import bghome from '../images/perfectbg.jpg';
 import image1 from '../images/quizz.jpg';
 import image2 from '../images/carem.jpg';
-import image3 from '../images/faq.jpg';
+import image3 from '../images/yoga.webp';
 
 const Home = () => {
     return (
@@ -40,17 +40,16 @@ const Home = () => {
                         </a>
                     </div>
                 </div>
-               
+                
                 <div className={styles['content-block']}>
                     <img src={image3} alt="Image 3" />
                     <div className={styles['text']}>
-                        <h2>FAQs</h2>
-                        <p>
-Step into the realm of our page's FAQs, where a treasure trove of eloquently phrased answers awaits your exploration.</p>
-                        <a href="/faq" className={styles['learn-more-btn']}>
-                            Explore Faqs
+                        <h2>Exercise & Meditation</h2>
+                        <p>Embark on a journey of self-discovery through the harmonious blend of exercise and meditation. Let the serenity of meditation guide your inner exploration, while the vitality of exercise invigorates your body and soul.</p>
+                        <a href="/exercisemed" className={styles['learn-more-btn']}>
+                            Explore healthy lifestyle resources
                         </a>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
