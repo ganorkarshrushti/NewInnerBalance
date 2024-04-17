@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './MoreArticles.css';
 const MoreArticles = () => {
   const moreArticles = [
     {
@@ -8,7 +8,19 @@ const MoreArticles = () => {
       description: 'A range of psychological disorders characterized by abnormal or disturbed eating habits.',
       link: 'https://www.nationaleatingdisorders.org/',
     },
-    // Add more articles as needed
+    {
+      id: 8,
+      title: 'Panic Attack',
+      description: 'A range of psychological disorders characterized by abnormal or disturbed eating habits.',
+      link: 'https://psychcentral.com/anxiety/panic-attack-symptoms',
+      
+    },
+    {
+      id: 8,
+      title: 'Dissociative Identity Disorder (DID)',
+      description: 'A range of psychological disorders characterized by abnormal or disturbed eating habits.',
+      link: 'https://psychcentral.com/disorders/dissociative-identity-disorder',
+    },
   ];
 
   return (
@@ -24,5 +36,4 @@ const MoreArticles = () => {
     </div>
   );
 };
-
 export default MoreArticles;

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import MoreArticles from '../pages/MoreArticles';
 
-
 import './Articles.css';
 
 const mentalIllnesses = [

@@ -32,7 +32,6 @@ import LogoSlider from './components/LogoSlider';
 // import Card from './components/Card';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 
-
 function App() {
    const router=createBrowserRouter([
     {
@@ -98,7 +97,6 @@ function App() {
       element: <CalmingVideosSlider/>
     },
   
-
     {
       path: "/ocdquiz",
       element: <OcdQuiz/>
@@ -155,8 +153,6 @@ function App() {
       element: <Affirmations/>
     },
     
-
-
    ])
   
   return (
@@ -167,5 +163,4 @@ function App() {
     </>   
   )
 }
-
 export default App
