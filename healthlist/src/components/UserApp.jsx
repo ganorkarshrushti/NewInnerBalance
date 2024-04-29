@@ -1,4 +1,4 @@
-// UserApp.js
+
 import React, { useState } from 'react';
 import './UserApp.css'; // Import CSS file for styling
 import quiz2Image from '../images/user1.png';

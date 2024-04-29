@@ -2,7 +2,7 @@ import React from 'react';
 import quiz2Image from '../images/user3.jpg';
 import quiz3Image from '../images/Therapist.jpg';
 const Therapist = () => {
- 
+
   return (
     <div style={styles.card}>
       <img src={quiz3Image} alt="Therapist Icon" style={styles.image} />
