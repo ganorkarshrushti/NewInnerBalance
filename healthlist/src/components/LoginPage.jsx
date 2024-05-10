@@ -2,6 +2,7 @@
 import React from 'react';
 import './LoginPage.css';
 
+
 const Login = () => {
     return (
         <div className="auth-container">
@@ -16,4 +17,8 @@ const Login = () => {
     );
 }
 
+
 export default Login;
+
+
+
