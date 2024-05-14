@@ -16,6 +16,8 @@ const CustomNavbar = () => {
           <Nav className="mx-auto">
             <Nav.Link href="/" className="text-black mx-2">Home</Nav.Link>
             <Nav.Link href="/therapistcard" className="text-black mx-2"> Appointment Booking </Nav.Link>
+            <Nav.Link href="/chatbot" className="text-black mx-2"> Chat</Nav.Link>
+          
             <Nav.Link href="/help" className="text-black mx-2">Help Now</Nav.Link>
             <Nav.Link href="/contact" className="text-black mx-2">Contact</Nav.Link>
           

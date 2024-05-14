@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import './UserApp.css'; // Import CSS file for styling
 import quiz2Image from '../images/user1.png';
 import quiz3Image from '../images/user3.jpg';
@@ -106,6 +106,112 @@ function UserApp() {
           <div className="card-header" style={{paddingTop:'35vh',backgroundColor:'white',color:'black'}}>
             Total : <p>**Display total amount here</p>
           </div>
+        </div>
+        <button className="payment-button">
+          <a href="/price" style={{ color: 'white', textDecoration: 'none' }}>Payment Gateway</a>
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default UserApp;
+*/
+
+import React, { useState } from 'react';
+import './UserApp.css'; // Import CSS file for styling
+
+function UserApp() {
+  // State for storing selected service
+  const [selectedService, setSelectedService] = useState(null);
+
+  // State for storing selected date and time
+  const [selectedDate, setSelectedDate] = useState('');
+  const [selectedTime, setSelectedTime] = useState('');
+
+  // Function to handle service selection
+  const handleServiceSelection = (service) => {
+    setSelectedService(service);
+  };
+
+  // Function to handle date selection
+  const handleDateSelection = (event) => {
+    setSelectedDate(event.target.value);
+  };
+
+  // Function to handle time selection
+  const handleTimeSelection = (time) => {
+    setSelectedTime(time);
+  };
+
+  // Sample service data
+  const service = {
+    id: 1,
+    name: 'Depression',
+    therapist: 'John Doe',
+    price: '$50',
+    
+  };
+
+  // Select the service by default
+  useState(() => {
+    setSelectedService(service);
+  }, []);
+
+  // Sample time options
+  const timeOptions = ['1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM'];
+
+  return (
+    <div className="UserApp">
+      <div className="card">
+        <div className="card-header">Service</div>
+        <div className="card-body">
+          <div className="service-item">
+            <img src={service.profilePhoto} alt={service.therapist} className="therapist-photo" />
+            <div>
+              <div>{service.name}</div>
+              <div>Therapist: {service.therapist}</div>
+              <div>Price: {service.price}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-header">Select Date and Time</div>
+        <div className="card-body">
+          <form>
+            <label htmlFor="date">Choose a date:</label>
+            <input type="date" id="date" name="date" onChange={handleDateSelection} />
+          </form>
+        </div>
+        <div className="card-body">
+          <label>Choose a time:</label>
+          {timeOptions.map((time) => (
+            <button
+              key={time}
+              onClick={() => handleTimeSelection(time)}
+              className={selectedTime === time ? 'selected-time' : ''}
+            >
+              {time}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-header">Booking Details</div>
+        <div className="card-body">
+          {selectedService && selectedDate && selectedTime ? (
+            <div>
+              <p>Service: {selectedService.name}</p>
+              <p>Therapist: {selectedService.therapist}</p>
+              <p>Date: {selectedDate}</p>
+              <p>Time: {selectedTime}</p>
+            </div>
+          ) : (
+            <p>Please select a service, date, and time</p>
+          )}
         </div>
         <button className="payment-button">
           <a href="/price" style={{ color: 'white', textDecoration: 'none' }}>Payment Gateway</a>

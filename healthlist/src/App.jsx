@@ -24,6 +24,7 @@ import CalmingVideosSlider from './components/CalmingVideosSlider';
 import Affirmations from './components/Affirmations';
 import TherapistCard from './components/TherapistCard';
 import UserApp from './components/UserApp';
+import BookingForm  from './components/BookingForm';
 import Price from './components/Price';
 import Contact from './components/Contact';
 import LoginPage from './components/LoginPage';
@@ -32,6 +33,7 @@ import LogoSlider from './components/LogoSlider';
 import Footer from './components/Footer';
 // import Card from './components/Card';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { Chatbot } from './components/Chatbot';
 
 function App() {
    const router=createBrowserRouter([
@@ -55,6 +57,10 @@ function App() {
     {
       path: "/userapp",
       element: <UserApp/>
+    },
+    {
+      path: "/bookingform",
+      element: <BookingForm/>
     },
     {
       path: "/therapistcard",
@@ -156,6 +162,10 @@ function App() {
     {
       path: "/affirmations",
       element: <Affirmations/>
+    },
+    {
+      path: "/chatbot",
+      element: <Chatbot/>
     },
     
    ])

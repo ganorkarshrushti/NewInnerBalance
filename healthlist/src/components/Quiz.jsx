@@ -27,7 +27,7 @@ const Quiz = () => {
             <div className="card-content">
               <h2>Anxiety  Test</h2>
               <p>Our quiz can help you determine whether you have Anxiety.</p>
-              <button><Link to="/AnxietyQuiz">Take Quiz</Link></button>
+              <button><Link to="/AnxietyQuiz"><h2>Take Quiz</h2></Link></button>
             </div>
           </div>
 
@@ -40,7 +40,7 @@ const Quiz = () => {
               <p>
                  Our quiz can help you detect early signs of Depression
               </p>
-              <button><Link to="/DepressionQuiz">Take Quiz</Link></button>
+              <button><Link to="/DepressionQuiz"><h2>Take Quiz</h2></Link></button>
             </div>
           </div>
   
@@ -51,7 +51,7 @@ const Quiz = () => {
             <div className="card-content">
               <h2>OCD Test</h2>
               <p>Our quiz can help you determine whether you have OCD</p>
-              <button><Link to="/ocdquiz">Take Quiz</Link></button>
+              <button><Link to="/ocdquiz"><h2>Take Quiz</h2></Link></button>
             </div>
           </div>
           </div>
@@ -66,7 +66,7 @@ const Quiz = () => {
                 Our quiz can help you determine whether you
                 have ADHD
               </p>
-              <button><Link to="/AdhdQuiz">Take Quiz</Link></button>
+              <button><Link to="/AdhdQuiz"><h2>Take Quiz</h2></Link></button>
             </div>
           </div>
           <div className="card">
@@ -76,7 +76,7 @@ const Quiz = () => {
             <div className="card-content">
               <h2>PTSD Test</h2>
               <p>Our quiz can help you determine whether you have PTSD.</p>
-              <button><Link to="/ptsdquiz">Take Quiz</Link></button>
+              <button><Link to="/ptsdquiz"><h2>Take Quiz</h2></Link></button>
             </div>
           </div>
           <div className="card">
@@ -86,7 +86,7 @@ const Quiz = () => {
             <div className="card-content">
               <h2>Social Anxiety Test</h2>
               <p>Take this Quiz to know more.</p>
-              <button><Link to="/SocialQuiz">Take Quiz</Link></button>
+              <button><Link to="/SocialQuiz"><h2>Take Quiz</h2></Link></button>
             </div>
           </div>
         </div>
