@@ -10,29 +10,18 @@ const client = new MongoClient(process.env.DB_URL, {
 });
 
 router.post("/", async (req, res) => {
-    const { email, password } = req.body;
+    const { email, password,fullname } = req.body;
     try {
-        var flag = false;
-        var userId;
 
         //connect to database
         await client.connect();
         const db = client.db("healthList");
         console.log(req.body);
 
-        const collection = await db.collection("AccountData").aggregate().toArray();
-
-        collection.find((e) => {
-            if (e.email === email) {
-                if (e.password === password) {
-                    flag = true;
-                    userId = e._id;
-
-                }
-            }
-        });
-        if (flag) {
-            res.json({ status: true, userId: userId });
+        const collection = await db.collection("AccountData").insertOne({email,password,fullname});
+        
+        if (collection.acknowledged) {
+            res.json({ status: true });
         }
         else {
             res.json({ status: false });
