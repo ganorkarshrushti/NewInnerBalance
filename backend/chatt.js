@@ -13,7 +13,7 @@ router.post("/fetch-data", async (req, res) => {
     // For text-only input, use the gemini-pro model
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
-    const result = await model.generateContent(prompt);
+    const result = await model.generateContent(`${prompt}. Give small responses only!!`);
     const response = await result.response;
     const text = response.text();
 
