@@ -14,6 +14,7 @@ app.get("/", (req,res)=>{
 })
 app.use("/login", adminLogin);
 app.use("/signup", require("./signup"));
+app.use("/journal", require("./journal"));
 app.use("/gem", gemRoute); // Mount gem.js router at /gem
 
 app.listen(PORT, () => {
