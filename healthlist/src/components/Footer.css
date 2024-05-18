@@ -48,38 +48,41 @@
 
   /* Footer.css */
 
+  .foot {
+    background-color: transparent; /* Remove the background color */
+    font-size: 12px; /* Decrease the font size */
+    padding: 5px 10px; /* Decrease the padding */
+    text-align: center; /* Center the text */
+    color: #333; /* Set text color */
+    border-top: 1px solid #ccc; /* Add a border for separation (optional) */
+}
+
+/* Other existing classes */
 .about-acm {
-  height: 375px;
-  background-color: black;
+    height: 375px;
+    background-color: black;
 }
 
 .design-team {
-  background-color: rgb(21, 21, 21);
+    background-color: rgb(21, 21, 21);
 }
 
 .text-white {
-  color: white;
+    color: white;
 }
 
 .share {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .link {
-  color: white;
+    color: white;
 }
 
 .footer-imp-links a {
-  color: white;
+    color: white;
 }
 
 .location {
-  margin-top: 20px;
+    margin-top: 20px;
 }
-
-.foot {
-  background-color: #f18930;
-  font-size: 20px;
-  padding: 10px;
-}
-  

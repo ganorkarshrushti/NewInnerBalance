@@ -3,7 +3,6 @@ const { MongoClient } = require("mongodb");
 const express = require("express");
 const router = express.Router();
 require("dotenv").config();
-
 //connect to mongodb database
 const client = new MongoClient(process.env.DB_URL, {
     useUnifiedTopology: true,

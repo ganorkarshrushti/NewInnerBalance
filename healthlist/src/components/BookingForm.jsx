@@ -17,7 +17,7 @@ function BookingForm() {
 
   return (
     <div className="booking-form">
-      <h2>Book a Session</h2>
+      <h2>Add Profile</h2>
       <form onSubmit={handleSubmit}>
         <label>
           Therapist Name:

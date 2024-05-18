@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import './LoginPage.css';
 
-
 const Login = () => {
 
     const [email,setEmail] = useState("");

@@ -1,41 +1,3 @@
-/*import React from 'react';
-import './Footer.css'; // Import CSS file for styling
-
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="footer-content">
-        <div className="footer-logo">
-          <img src="/" alt="Logo" />
-          <h1>InnerBalance</h1>
-        </div>
-        <div className="footer-links">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
-        <div className="footer-social">
-          <ul>
-            <li><a href="#"><i className="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} InnerBalance. All Rights Reserved.</p>
-      </div>
-    </footer>
-  );
-}
-
-export default Footer;*/
-
-// Footer.js
 
 import React from 'react';
 import './Footer.css';
@@ -74,15 +36,15 @@ const Footer = () => {
                 <div className="col-md-4 location">
                   <h4>Location</h4>
                   <div className="location-map" data-aos="fade-up">
-                    {/* <iframe style={{ width: '250px', height: 'auto' }}
+                    { <iframe style={{ width: '250px', height: 'auto' }}
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.699716753677!2d79.04554451488298!3d21.004670786011374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bdc6b03bfded%3A0x51964eb66fa3ec5e!2sSt.%20Vincent%20Pallotti%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1666528069153!5m2!1sen!2sin"
                       width="600" height="450" style={{ border: '0' }} allowFullScreen="" loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"></iframe> */}
+                      referrerPolicy="no-referrer-when-downgrade"></iframe> }
                   </div>
                 </div>
               </div>
               <div className="foot" style={{ backgroundColor: '#f18930', fontSize: '20px', padding: '10px' }}>
-                <h6>Copyright © 2022 All right reserved | Designed by UBA Students Club | SVPCET</h6>
+                <h6>Copyright © 2022 All right reserved | SVPCET</h6>
               </div>
             </div>
           </div>
@@ -91,5 +53,5 @@ const Footer = () => {
     </div>
   );
 };
-
 export default Footer;
+

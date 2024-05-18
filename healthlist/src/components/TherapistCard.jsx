@@ -7,7 +7,7 @@ const Therapist = () => {
     <div style={styles.card}>
       <img src={quiz3Image} alt="Therapist Icon" style={styles.image} />
       <h2 style={styles.heading}>Therapist</h2>
-      <button style={styles.button}><a href="/bookingform" style={{ color: 'white', textDecoration: 'none' }}>Book a Session </a></button>
+      <button style={styles.button}><a href="/bookingform" style={{ color: 'white', textDecoration: 'none' }}>Add Profile </a></button>
    
     </div>
   );
