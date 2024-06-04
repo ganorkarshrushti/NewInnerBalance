@@ -1,3 +1,158 @@
+import React, { useState, useEffect } from 'react';
+import './UserApp.css'; // Import CSS file for styling
+
+function UserApp() {
+  // State for storing selected service
+  const [selectedService, setSelectedService] = useState(null);
+
+  // State for storing selected date and time
+  const [selectedDate, setSelectedDate] = useState('');
+  const [selectedTime, setSelectedTime] = useState('');
+
+  // State for storing selected session type
+  const [selectedSessionType, setSelectedSessionType] = useState('');
+
+  // State for displaying offline payment message
+  const [showOfflinePaymentMessage, setShowOfflinePaymentMessage] = useState(false);
+
+  // Function to handle service selection
+  const handleServiceSelection = (service) => {
+    setSelectedService(service);
+  };
+
+  // Function to handle date selection
+  const handleDateSelection = (event) => {
+    setSelectedDate(event.target.value);
+  };
+
+  // Function to handle time selection
+  const handleTimeSelection = (time) => {
+    setSelectedTime(time);
+  };
+
+  // Function to handle session type selection
+  const handleSessionTypeSelection = (event) => {
+    const sessionType = event.target.value;
+    setSelectedSessionType(sessionType);
+    if (sessionType === 'offline') {
+      setShowOfflinePaymentMessage(true);
+    } else {
+      setShowOfflinePaymentMessage(false);
+    }
+  };
+
+  // Sample service data
+  const service = {
+    id: 1,
+    name: 'Depression',
+    therapist: 'John Doe',
+    price: '$50',
+    profilePhoto: 'path/to/profile/photo.jpg', // Replace with actual path or URL
+  };
+
+  // Select the service by default
+  useEffect(() => {
+    setSelectedService(service);
+  }, []);
+
+  // Sample time options
+  const timeOptions = ['1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM'];
+
+  return (
+    <div className="UserApp">
+      <div className="card">
+        <div className="card-header">Service</div>
+        <div className="card-body">
+          <div className="service-item">
+            <img src={service.profilePhoto} alt={service.therapist} className="therapist-photo" />
+            <div>
+              <div>{service.name}</div>
+              <div>Therapist: {service.therapist}</div>
+              <div>Price: {service.price}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-header">Select Date and Time</div>
+        <div className="card-body">
+          <form>
+            <label htmlFor="date">Choose a date:</label>
+            <input type="date" id="date" name="date" onChange={handleDateSelection} />
+          </form>
+        </div>
+        <div className="card-body">
+          <label>Choose a time:</label>
+          {timeOptions.map((time) => (
+            <button
+              key={time}
+              onClick={() => handleTimeSelection(time)}
+              className={selectedTime === time ? 'selected-time' : ''}
+            >
+              {time}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-header">Select Session Type</div>
+        <div className="card-body">
+          <form>
+            <label>
+              <input
+                type="radio"
+                value="offline"
+                checked={selectedSessionType === 'offline'}
+                onChange={handleSessionTypeSelection}
+              />
+              Offline
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="online"
+                checked={selectedSessionType === 'online'}
+                onChange={handleSessionTypeSelection}
+              />
+              Online
+            </label>
+          </form>
+          {showOfflinePaymentMessage && (
+            <div className="offline-payment-message">
+              You can pay fees offline or online.
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-header">Booking Details</div>
+        <div className="card-body">
+          {selectedService && selectedDate && selectedTime && selectedSessionType ? (
+            <div>
+              <p>Service: {selectedService.name}</p>
+              <p>Therapist: {selectedService.therapist}</p>
+              <p>Date: {selectedDate}</p>
+              <p>Time: {selectedTime}</p>
+              <p>Session Type: {selectedSessionType}</p>
+            </div>
+          ) : (
+            <p>Please select a service, date, time, and session type</p>
+          )}
+        </div>
+        <button className="payment-button">
+          <a href="/price" style={{ color: 'white', textDecoration: 'none' }}>Payment Gateway</a>
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default UserApp;
+
+
 
 /*import React, { useState } from 'react';
 import './UserApp.css'; // Import CSS file for styling
@@ -118,6 +273,7 @@ function UserApp() {
 export default UserApp;
 */
 
+/* //current 
 import React, { useState } from 'react';
 import './UserApp.css'; // Import CSS file for styling
 
@@ -222,3 +378,4 @@ function UserApp() {
 }
 
 export default UserApp;
+*/

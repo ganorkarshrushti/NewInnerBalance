@@ -1,7 +1,5 @@
 .bg-body-tertiary {
     background-color: #f0f0f0; 
-    
- 
 }
 
 /* Styles for Logo */
@@ -62,12 +60,14 @@
     color: #000 !important; /* Set text color */
     text-decoration: none; /* Remove default link underline */
     margin-right: 15px; /* Add margin between navbar links */
-    
+    font-weight: 400; /* Make the font somewhat bold */
+    font-family: 'Arial', sans-serif; /* Change the font family for a more elegant look */
 }
 
 .nav-link:hover {
-    color: #333 !important; /* Set text color on hover */
+    color: #f62982 !important; /* Set text color on hover */
 }
+
 
 
 .me-auto {
