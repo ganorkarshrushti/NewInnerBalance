@@ -45,6 +45,7 @@ const SocialQuiz = () => {
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
   ]);
+
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [clickedOption, setClickedOption] = useState(0);
@@ -85,7 +86,6 @@ const SocialQuiz = () => {
       { min: 31, max: 40, result: "High Social Interaction" },
     ];
 
-    // Find the range that matches the score
     const result = ranges.find((range) => score >= range.min && score <= range.max);
 
     return result ? result.result : "Error: Result not found";
@@ -101,9 +101,7 @@ const SocialQuiz = () => {
             <p>
               {questions[currentQuestion].answers.map((answer, answerIndex) => (
                 <button
-                  className={`option-btn ${
-                    clickedOption === answerIndex + 1 ? "checked" : null
-                  }`}
+                  className={`option-btn ${clickedOption === answerIndex + 1 ? "checked" : ""}`}
                   key={answerIndex}
                   onClick={() => handleOptionClick(answerIndex)}
                 >

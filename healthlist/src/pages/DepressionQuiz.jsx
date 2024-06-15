@@ -1,6 +1,5 @@
-
 import React, { useState } from "react";
-import './DepressionQuiz.css';
+import "./DepressionQuiz.css";
 import DepressionResult from "./DepressionResult";
 
 const DepressionQuiz = () => {
@@ -126,7 +125,6 @@ const DepressionQuiz = () => {
       </div>
     </div>
   );
-
 };
 
 export default DepressionQuiz;

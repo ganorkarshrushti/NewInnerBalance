@@ -223,7 +223,7 @@ export function Chatbot() {
     sendButton: {
       marginLeft: '10px',
       padding: '10px 20px',
-      backgroundColor: '#007BFF',
+      backgroundColor: '#FF69B4',
       color: '#fff',
       border: 'none',
       borderRadius: '20px',
@@ -232,7 +232,7 @@ export function Chatbot() {
       fontFamily: '"Roboto", sans-serif',
     },
     sendButtonHover: {
-      backgroundColor: '#0056b3',
+      backgroundColor: '#FF1493',
     },
   };
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './PtsdQuiz.css';
+import "./PtsdQuiz.css";
 import PtsdResult from "./PtsdResult";
 
 const PtsdQuiz = () => {

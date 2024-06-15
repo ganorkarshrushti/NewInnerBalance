@@ -1,21 +1,34 @@
+
+
 import React from "react";
 
 const OcdResult = ({ score }) => {
+  let resultText;
+
+  if (score <= 10) {
+    resultText = "Your Ocd symptoms are minimal. Keep up the good work in managing your attention and focus.";
+  } else if (score > 10 && score <= 20) {
+    resultText = "You are experiencing mild OCD symptoms. Consider implementing organizational strategies and seeking support if needed.";
+  } else if (score > 20 && score <= 30) {
+    resultText = "Your OCD symptoms are moderate. It may be helpful to establish routines and explore techniques to improve focus and attention.";
+  } else {
+    resultText = "Your OCD  symptoms are severe. It's important to seek professional help and support to manage your symptoms effectively.";
+  }
+
   return (
     <div className="result-container">
       <h3>Additional Information:</h3>
       <p>
-        {score <= 10 && "Your OCD symptoms appear to be minimal. Keep an eye on them and seek help if they worsen."}
-        {score > 10 && score <= 20 && "You are experiencing mild OCD symptoms. Consider implementing coping strategies or seeking professional guidance."}
-        {score > 20 && score <= 30 && "Your OCD symptoms are moderate. It's recommended to seek professional help to manage and alleviate your symptoms effectively."}
-        {score > 30 && "Your OCD symptoms are severe. It's crucial to seek immediate professional support to address and treat your symptoms."}
+        <strong>{resultText}</strong>
       </p>
-      
       <p>
-        Remember that OCD can be effectively managed with proper treatment and support. Don't hesitate to reach out to mental health professionals for assistance.
+        If you need support, consider reaching out to a trusted friend, family member, or mental health professional. Remember, you are not alone, and help is available.
       </p>
     </div>
   );
 };
 
 export default OcdResult;
+
+
+

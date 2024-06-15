@@ -115,7 +115,8 @@ const ContactUs = () => {
                     required
                   ></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary" style={{ backgroundColor: '#FF1493', borderColor: '#FF69B4' }}>Submit</button>
+
               </form>
             </div>
           </div>

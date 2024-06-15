@@ -1,5 +1,3 @@
-
-//MOdified with automatic next question
 import React, { useState } from "react";
 import "./AnxietyQuiz.css";
 import AnxietyResult from "./AnxietyResult"; // Import your result component here
