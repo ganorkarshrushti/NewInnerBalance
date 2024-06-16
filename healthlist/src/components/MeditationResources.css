@@ -5,14 +5,14 @@
   
   .resource-slider {
     display: flex;
-    flex-wrap: nowrap; /* Prevent items from wrapping */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
   }
   
   .resource-slider::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in WebKit browsers */
+    display: none; 
   }
   
   .resource-card {
@@ -20,7 +20,7 @@
   }
   
   .resource-card img {
-    width: 200px; /* Adjust width as needed */
+    width: 200px; 
     height: auto;
   }
   
@@ -28,5 +28,4 @@
     margin-top: 10px;
   }
   
-  /* Optional: Add more styling as needed */
-  
+ 

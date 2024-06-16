@@ -24,6 +24,8 @@ router.post("/fetch-data", async (req, res) => {
 
 module.exports = router;*/
 
+
+//real
 const express = require("express");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
@@ -56,7 +58,6 @@ const truncateText = (text, wordLimit) => {
   return text;
 };
 
-// Function to format text as numbered points
 const formatAsPoints = (text) => {
   // Split the text into sentences
   const sentences = text.match(/[^\.!\?]+[\.!\?]+/g);
@@ -69,7 +70,7 @@ const formatAsPoints = (text) => {
 
 router.post("/fetch-data", async (req, res) => {
   try {
-    const prompt = req.body.message; // Assuming the message is sent in the request body
+    const prompt = req.body.message; 
 
     // Check for specific intents first
     const intentResponse = handleIntent(prompt);
