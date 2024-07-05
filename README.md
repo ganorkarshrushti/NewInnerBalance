@@ -8,7 +8,6 @@ InnerBalance is an online platform dedicated to supporting mental health and wel
 - **Evidence-Based Assessments:** Assessments designed to provide insights into mental well-being based on established research.
 - **Personalized Mood Tracking:** Tools for users to track their moods and emotional patterns over time.
 - **Help Now:** Immediate access to emergency hotlines, live chat support, and connections to certified coaches and therapists.
-- **Privacy:** Secure environment ensuring user data privacy and confidentiality.
 - **Interactive Tools:** Includes interactive quizzes, guided meditation, yoga sessions, and stress-relief exercises.
 - **Affirmations:** Curated uplifting quote images to inspire and motivate users.
   
@@ -16,7 +15,7 @@ InnerBalance is an online platform dedicated to supporting mental health and wel
 
 - **Frontend:** ReactJS
 - **Backend:** Node.js with Express
-- **Database:** [Specify your database technology if applicable]
+- **Database:** MongoDB
   
 ## Installation
 
@@ -45,10 +44,13 @@ InnerBalance is an online platform dedicated to supporting mental health and wel
 
 - AssessmentQuiz: Presents personalized assessments and quizzes to users based on
 their input data.
+
 ● ExpertSupport:Facilitates instant access to expert support and includes an affirmation
 section with motivational quote images.
+
 ● UserInputForm: Allows users to input their mental health data, including mood, stress
 level, and other relevant information, write journal entries about their feelings and
 experiences.
+
 ● Live-ChatBot : This feature provides users with immediate access to trained
 professionals who are available to offer support, guidance, and a listening ear 24/7.
