@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-
 const Footer = () => {
   return (
     <div className="footer">
@@ -20,10 +19,8 @@ const Footer = () => {
           <div className="col-md-4 quick-links">
             <h4>Quick Links</h4>
             <div className="footer-imp-links" id="vs" data-aos="fade-down">
-              <a className="link" href="visits.html">Visits</a><br />
-              <a className="link" href="gallery.html">Gallery</a><br />
-              <a className="link" href="project.html">Projects</a><br />
-              <a className="link" href="contact-us.html">Contact Us</a>
+              
+              <a className="" href="contact-us.html">Contact Us</a>
             </div>
           </div>
           <div className="col-md-4 location">
@@ -37,11 +34,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2022 All rights reserved | SVPCET</p>
+          <p>&copy; 2024 All rights reserved | SVPCET</p>
         </div>
       </div>
     </div>
   );
 };
-
 export default Footer;

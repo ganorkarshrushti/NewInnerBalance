@@ -1,9 +1,9 @@
-// Require modules
+
 const { MongoClient } = require("mongodb");
 const express = require("express");
 const router = express.Router();
 require("dotenv").config();
-//connect to mongodb database
+//connect to mongodb db
 const client = new MongoClient(process.env.DB_URL, {
     useUnifiedTopology: true,
 });
@@ -14,7 +14,7 @@ router.post("/", async (req, res) => {
         var flag = false;
         var userId;
 
-        //connect to database
+        //connect to db
         await client.connect();
         const db = client.db("healthList");
         console.log(req.body);
@@ -26,7 +26,6 @@ router.post("/", async (req, res) => {
                 if (e.password === password) {
                     flag = true;
                     userId = e._id;
-
                 }
             }
         });
@@ -37,11 +36,9 @@ router.post("/", async (req, res) => {
             res.json({ status: false });
         }
 
-
     } catch (error) {
         console.error(error);
         return res.status(500).send("Server error");
     }
 });
-
 module.exports = router;

@@ -1,34 +1,6 @@
-/*const express = require("express");
-const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const router = express.Router();
-// Access your API key as an environment variable
-const genAI = new GoogleGenerativeAI(process.env.GEMINI);
-
-router.post("/fetch-data", async (req, res) => {
-  try {
-    const prompt = req.body.message; // Assuming the message is sent in the request body
-    // For text-only input, use the gemini-pro model
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-
-    const result = await model.generateContent(`${prompt}. Give small responses only!!`);
-    const response = await result.response;
-    const text = response.text();
-
-    res.json({ text }); // Send the generated text back to the client
-  } catch (error) {
-    console.error('Error generating text:', error);
-    res.status(500).json({ error: 'Internal server error' });
-  }
-});
-
-module.exports = router;*/
-
-
-//real
 const express = require("express");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-
 const router = express.Router();
 // Access your API key as an environment variable
 const genAI = new GoogleGenerativeAI(process.env.GEMINI);
@@ -37,7 +9,6 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI);
 const handleIntent = (message) => {
   const greetings = ["hi", "hello", "hey"];
   const normalizedMessage = message.trim().toLowerCase();
-
   if (greetings.includes(normalizedMessage)) {
     return "Hello! How can I help you?";
   }
@@ -45,7 +16,6 @@ const handleIntent = (message) => {
   if (normalizedMessage.includes("suffering from")) {
     return `It sounds like you're looking for advice. Please provide more details about what you're suffering from, and I will do my best to help.`;
   }
-
   return null;
 };
 
@@ -67,18 +37,14 @@ const formatAsPoints = (text) => {
   }
   return text;
 };
-
 router.post("/fetch-data", async (req, res) => {
   try {
     const prompt = req.body.message; 
-
     // Check for specific intents first
     const intentResponse = handleIntent(prompt);
     if (intentResponse) {
       return res.json({ text: intentResponse });
     }
-
-    // For health-related input, ensure concise and relevant advice
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
     const result = await model.generateContent(`${prompt}. Please provide practical advice and tips in less than 250 words, formatted as a list.`);
     const response = await result.response;
@@ -87,13 +53,11 @@ router.post("/fetch-data", async (req, res) => {
     // Remove any asterisks from the response text
     text = text.replace(/\*/g, '');
 
-    // Truncate the response to 250 words
     text = truncateText(text, 50);
 
-    // Format the response as numbered points
     text = formatAsPoints(text);
 
-    res.json({ text }); // Send the generated text back to the client
+    res.json({ text }); 
   } catch (error) {
     console.error('Error generating text:', error);
     res.status(500).json({ error: 'Internal server error' });
@@ -101,3 +65,5 @@ router.post("/fetch-data", async (req, res) => {
 });
 
 module.exports = router;
+
+

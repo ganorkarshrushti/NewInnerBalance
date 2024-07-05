@@ -6,7 +6,6 @@
     background-color: white;
     border-radius: 10px;
   }
-  
   .address {
     display: flex;
     align-items: center;
@@ -25,19 +24,19 @@
   .social-icons .icon {
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: #000000; /* Icon color */
+    color: #000000; 
     transition: color 0.3s ease;
   }
   
   .social-icons .icon:hover {
-    color: #007bff; /* Change icon color on hover */
+    color: #007bff; 
   }
   
   .contact-form {
     flex: 1;
     padding: 2rem;
     background-image: url("https://t4.ftcdn.net/jpg/05/08/85/65/360_F_508856527_j47VSpWgbNbECuiOa9kSUllJBuZ2V1hF.jpg"); /* Replace with the actual path to your background image */
-    background-size: cover; /* Cover the entire element */
+    background-size: cover; 
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

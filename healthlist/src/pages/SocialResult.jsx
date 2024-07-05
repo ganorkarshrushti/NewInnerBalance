@@ -10,10 +10,14 @@ const SocialResult = ({ score }) => {
         {score > 20 && score <= 30 && "Your social anxiety level is moderate. It may be helpful to seek support from a therapist or counselor to address your social fears."}
         {score > 30 && "Your social anxiety level is severe. It's important to seek professional help and support to manage your social anxiety effectively."}
       </p>
-      
       <p>
         If you need support, consider reaching out to a trusted friend, family member, or mental health professional. Remember, you are not alone, and help is available.
       </p>
+      <div className="help-box">
+        <p>Need help?</p>
+        <p>Connect with our Chatbot service work through any questions or concerns that you might have.</p>
+        <a href="/chatbot" className="chat-button">Chat Here</a>
+      </div>
     </div>
   );
 };

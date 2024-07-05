@@ -20,10 +20,10 @@ const Journal = () => {
       .then(res => {
         console.log(res.data);
         if (res.data && Array.isArray(res.data)) {
-          // Check if res.data is an array
+          
           setSavedEntries(res.data.map(item => item.entry));
         } else {
-          // If res.data is not an array or does not exist, initialize savedEntries as an empty array
+          
           setSavedEntries([]);
         }
       })

@@ -1,18 +1,12 @@
-/* Faq.css */
 
-/* Background image */
 .faq-container {
   background-image: url('https://media.istockphoto.com/id/1301477619/vector/abstract-minimal-hand-painted-pattern.jpg?s=612x612&w=0&k=20&c=ugue1WqvN7KGq-RDcxMoVww0GaweYMaChjhcgmITSGw=');
   background-size: cover;
   background-position: center;
 }
-
-/* Main container styling */
 .faq-container {
   padding: 50px;
 }
-
-/* FAQ item styling */
 .faq-item {
   margin-bottom: 20px;
   border-radius: 8px;
@@ -20,31 +14,23 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
-
 .faq-item:hover {
   transform: translateY(-5px);
 }
-
-/* FAQ box styling */
 .faq-box {
   padding: 20px;
 }
-
-/* Heading styling */
 h2 {
   font-size: 24px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
 }
-
 h3 {
   font-size: 20px;
   color: #333;
   margin-bottom: 10px;
 }
-
-/* Paragraph styling */
 p {
   font-size: 16px;
   color: #666;

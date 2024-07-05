@@ -1,73 +1,28 @@
-/* 
-
-.more-articles {
-  margin-top: 20px;
-}
-
-.article-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
-}
-
-.article-item {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.article-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.article-item p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.read-more-btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-.read-more-btn:hover {
-  background-color: #0056b3;
-}
-*/
-/* MoreArticles.css */
 
 .more-articles {
     margin-top: 20px;
-    overflow-x: auto; /* Enable horizontal scrolling if articles exceed container width */
+    overflow-x: auto; 
   }
   
   .article-list {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping to keep articles in a single line */
-    overflow-x: auto; /* Enable horizontal scrolling if articles exceed container width */
-    padding-bottom: 20px; /* Add some space at the bottom for better scrolling experience */
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    padding-bottom: 20px; 
   }
   
   .article-item {
-    flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
-    min-width: 300px; /* Set minimum width for each article */
+    flex: 0 0 auto; 
+    min-width: 300px; 
     background-color: #f9f9f9;
     padding: 20px;
-    margin-right: 20px; /* Add margin between articles */
+    margin-right: 20px; 
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
   
   .article-item:last-child {
-    margin-right: 0; /* Remove margin from the last article to prevent extra space */
+    margin-right: 0; 
   }
   
   .article-item h3 {

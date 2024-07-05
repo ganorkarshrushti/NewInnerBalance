@@ -3,7 +3,6 @@ const cors = require("cors");
 const adminLogin = require("./login");
 const gemRoute = require("./chatt");
 
-
 const PORT = process.env.PORT || 5000;
 const app = express(); 
 

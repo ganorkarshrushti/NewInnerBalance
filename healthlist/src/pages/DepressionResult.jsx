@@ -24,6 +24,11 @@ const DepressionResult = ({ score }) => {
       <p>
         If you need support, consider reaching out to a trusted friend, family member, or mental health professional. Remember, you are not alone, and help is available.
       </p>
+      <div className="help-box">
+        <p>Need help?</p>
+        <p>Connect with our Chatbot service to work through any questions or concerns that you might have.</p>
+        <a href="/chatbot" className="chat-button">Chat Here</a>
+      </div>
     </div>
   );
 };

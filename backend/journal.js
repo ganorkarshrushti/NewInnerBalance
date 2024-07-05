@@ -1,10 +1,8 @@
-// server.js
 
 const express = require("express");
 const { MongoClient } = require("mongodb");
 const router = express.Router();
 require("dotenv").config();
-
 const client = new MongoClient(process.env.DB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -33,7 +31,6 @@ router.post("/save", async (req, res) => {
     res.status(500).json({ status: false, error: "Server error" });
   }
 });
-
 router.get("/view", async (req, res) => {
     try {
       const db = client.db("healthList");
@@ -46,5 +43,4 @@ router.get("/view", async (req, res) => {
       res.status(500).json({ status: false, error: "Server error" });
     }
   });
-  
 module.exports = router;

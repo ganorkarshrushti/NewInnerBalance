@@ -4,7 +4,7 @@ const express = require("express");
 const router = express.Router();
 require("dotenv").config();
 
-//connect to mongodb database
+//connect to mongodb db
 const client = new MongoClient(process.env.DB_URL, {
     useUnifiedTopology: true,
 });
@@ -13,7 +13,7 @@ router.post("/", async (req, res) => {
     const { email, password,fullname } = req.body;
     try {
 
-        //connect to database
+        //connect to db
         await client.connect();
         const db = client.db("healthList");
         console.log(req.body);

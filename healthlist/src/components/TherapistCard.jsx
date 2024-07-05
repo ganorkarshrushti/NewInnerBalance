@@ -1,6 +1,6 @@
 import React from 'react';
 import quiz2Image from '../images/user3.jpg';
-import quiz3Image from '../images/Therapist.jpg';
+/*import quiz3Image from '../images/Therapist.jpg';*/
 const Therapist = () => {
 
   return (
@@ -8,7 +8,6 @@ const Therapist = () => {
       <img src={quiz3Image} alt="Therapist Icon" style={styles.image} />
       <h2 style={styles.heading}>Therapist</h2>
       <button style={styles.button}><a href="/bookingform" style={{ color: 'white', textDecoration: 'none' }}>Add Profile </a></button>
-   
     </div>
   );
 };
@@ -30,7 +29,7 @@ const UserCard = () => {
 const  TherapistCard = () => {
   return (
     <div style={styles.container}>
-      <Therapist />
+    
       <UserCard />
     </div>
   );
@@ -39,7 +38,7 @@ const  TherapistCard = () => {
 const styles = {
   container: {
     display: 'flex',
-    paddingLeft: '55vh',
+    paddingLeft: '80vh',
     paddingTop:'12vh',
     height: '60vh',
     
@@ -47,7 +46,7 @@ const styles = {
   card: {
     border: '1px solid #ccc',
     borderRadius: '5px',
-    padding: '20px',
+    padding: '30px',
     margin: '10px',
     width:'55vh',
     textAlign: 'center',

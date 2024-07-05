@@ -1,9 +1,7 @@
 import React from 'react';
 import CalmingVideosSlider from './CalmingVideosSlider';
-
 import MeditationResources from './MeditationResources';
 import SleepStories from './SleepStories';
-
 
 const Relax = () => {
   return (

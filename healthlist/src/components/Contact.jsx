@@ -1,7 +1,5 @@
 
-//good 9 apr
 import React, { useState } from 'react';
-
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: '',
