@@ -1,76 +1,95 @@
 .bg-body-tertiary {
-    background-color: #f0f0f0; 
+    background-color: #f8f9fa; /* Lighter background for a cleaner look */
+    transition: background 0.3s ease-in-out;
 }
 
 /* Styles for Logo */
 .logo-img {
-    width: 50px; /* Adjust the width of the logo */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 80px; /* Add margin to the right of the logo */
+    width: 60px; /* Slightly larger for better visibility */
+    height: auto;
+    margin-left: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .navbar-brand .inner-balance {
-    margin-right: 350px; /* Adjust the value as needed */
-    
-  }
-  
+    margin-right: 300px; /* Adjust the value as needed */
+}
+
 /* Styles for Register/Login Button */
 .btn-outline-success {
-    color: #000; /* Set text color */
-    border-color: #000; /* Set border color */
+    color: #000;
+    border-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-success:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 /* Styles for Navbar Links and Dropdown */
-
 .dropdown-item {
-    color: #000; /* Set text color */
-    text-decoration: none; /* Remove default link underline */
+    color: #000;
+    text-decoration: none;
     margin-right: 10px;
-
+    transition: color 0.3s ease-in-out;
 }
 
 /* Styles for Navbar Links and Dropdown on Hover */
-
 .dropdown-item:hover {
-    color: #333; /* Set text color on hover */
+    color: #f62982;
+    background-color: #e3e3e3;
 }
 
 /* Styles for Navbar Dropdown Menu */
 .dropdown-menu {
-    background-color: #f0f0f0; 
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles for Navbar Dropdown Menu Items */
-.dropdown-item {
-    color: #000; /* Set text color */
-}
-
-/* Styles for Navbar Dropdown Menu Items on Hover */
-.dropdown-item:hover {
-    background-color: #e3e3e3; 
-}
-
- /* Styles for Navbar Links */
+/* Styles for Navbar Links */
 .navbar-nav .nav-link {
-    margin-right: 35px; 
+    margin-right: 35px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-    
 
 .nav-link {
-    color: #000 !important; /* Set text color */
-    text-decoration: none; /* Remove default link underline */
-    margin-right: 15px; /* Add margin between navbar links */
-    font-weight: 400; /* Make the font somewhat bold */
-    font-family: 'Arial', sans-serif; /* Change the font family for a more elegant look */
+    color: #000 !important;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    position: relative;
 }
 
 .nav-link:hover {
-    color: #f62982 !important; /* Set text color on hover */
+    color: #f62982 !important;
+    transform: translateY(-2px);
 }
 
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f62982;
+    transition: width 0.3s;
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%);
+}
 
+.nav-link:hover::after {
+    width: 100%;
+}
 
 .me-auto {
-    margin-left: 0; /* Reset margin */
-    margin-right: auto; /* Shift navbar links to the left */
+    margin-left: 0;
+    margin-right: auto;
 }
