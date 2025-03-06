@@ -1,6 +1,5 @@
 
 const express = require("express");
-
 const router = express.Router();
 // Access your API key as an environment variable
 
