@@ -3,7 +3,7 @@ const express = require("express");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const router = express.Router();
 // Access your API key as an environment variable
-const genAI = new GoogleGenerativeAI(process.env.GEMINI);
+
 
 // Function to handle specific intents
 const handleIntent = (message) => {
