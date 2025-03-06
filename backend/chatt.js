@@ -1,6 +1,6 @@
 
 const express = require("express");
-const { GoogleGenerativeAI } = require("@google/generative-ai");
+
 const router = express.Router();
 // Access your API key as an environment variable
 
